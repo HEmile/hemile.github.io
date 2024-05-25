@@ -1,36 +1,32 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{alivanistos2022prompting,
+  title = {Prompting as Probing: {{Using}} Language Models for Knowledge Base Construction},
+  author = {Alivanistos, D and Báez Santamarı́a, S and Cochez, M and Kalo, J-C and family=Krieken, given=E, prefix=van, useprefix=true and Thanapalasingam, T and others},
+  date = {2022},
+  publisher = {AachenCEUR-WS}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{danieleRefiningNeuralNetwork2023a,
+  title = {Refining Neural Network Predictions Using Background Knowledge},
+  author = {Daniele, Alessandro and family=Krieken, given=Emile, prefix=van, useprefix=true and Serafini, Luciano and family=Harmelen, given=Frank, prefix=van, useprefix=true},
+  date = {2023-03-14},
+  journaltitle = {Machine Learning},
+  shortjournal = {Mach Learn},
+  issn = {1573-0565},
+  doi = {10.1007/s10994-023-06310-3},
+  url = {https://doi.org/10.1007/s10994-023-06310-3},
+  urldate = {2023-03-29},
+  abstract = {Recent work has shown learning systems can use logical background knowledge to compensate for a lack of labeled training data. Many methods work by creating a loss function that encodes this knowledge. However, often the logic is discarded after training, even if it is still helpful at test time. Instead, we ensure neural network predictions satisfy the knowledge by refining the predictions with an extra computation step. We introduce differentiable refinement functions that find a corrected prediction close to the original prediction. We study how to effectively and efficiently compute these refinement functions. Using a new algorithm called iterative local refinement (ILR), we combine refinement functions to find refined predictions for logical formulas of any complexity. ILR finds refinements on complex SAT formulas in significantly fewer iterations and frequently finds solutions where gradient descent can not. Finally, ILR produces competitive results in the MNIST addition task.},
+  langid = {english},
+  keywords = {Fuzzy logic,Neurosymbolic AI,Optimization}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{heinerman2018benefits,
+  title = {Benefits of Social Learning in Physical Robots},
+  booktitle = {2018 {{IEEE}} Symposium Series on Computational Intelligence ({{SSCI}})},
+  author = {Heinerman, Jacqueline and Bussmann, Bart and Groenendijk, Rick and Van Krieken, Emile and Slik, Jesper and Tezza, Alessandro and Haasdijk, Evert and family=Eiben, given=AE, given-i=AE},
+  date = {2018},
+  pages = {851--858},
+  publisher = {IEEE}
 }
 
 @article{PhysRev.47.777,
@@ -61,55 +57,109 @@
   inspirehep_id = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{NEURIPS2023_4d9944ab,
+  title = {A-{{NeSI}}: {{A}} Scalable Approximate Method for Probabilistic Neurosymbolic Inference},
+  booktitle = {Advances in Neural Information Processing Systems},
+  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Thanapalasingam, Thiviyan and Tomczak, Jakub and family=Harmelen, given=Frank, prefix=van, useprefix=true and Ten Teije, Annette},
+  editor = {Oh, A. and Neumann, T. and Globerson, A. and Saenko, K. and Hardt, M. and Levine, S.},
+  date = {2023},
+  volume = {36},
+  pages = {24586--24609},
+  publisher = {Curran Associates, Inc.},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/4d9944ab3330fe6af8efb9260aa9f307-Paper-Conference.pdf}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@online{thanapalasingamIntelliGraphsDatasetsBenchmarking2023,
+  title = {{{IntelliGraphs}}: {{Datasets}} for {{Benchmarking Knowledge Graph Generation}}},
+  shorttitle = {{{IntelliGraphs}}},
+  author = {Thanapalasingam, Thiviyan and family=Krieken, given=Emile, prefix=van, useprefix=true and Bloem, Peter and Groth, Paul},
+  date = {2023-07-13},
+  eprint = {2307.06698},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2307.06698},
+  url = {http://arxiv.org/abs/2307.06698},
+  urldate = {2023-07-19},
+  abstract = {Knowledge Graph Embedding (KGE) models are used to learn continuous representations of entities and relations. A key task in the literature is predicting missing links between entities. However, Knowledge Graphs are not just sets of links but also have semantics underlying their structure. Semantics is crucial in several downstream tasks, such as query answering or reasoning. We introduce the subgraph inference task, where a model has to generate likely and semantically valid subgraphs. We propose IntelliGraphs, a set of five new Knowledge Graph datasets. The IntelliGraphs datasets contain subgraphs with semantics expressed in logical rules for evaluating subgraph inference. We also present the dataset generator that produced the synthetic datasets. We designed four novel baseline models, which include three models based on traditional KGEs. We evaluate their expressiveness and show that these models cannot capture the semantics. We believe this benchmark will encourage the development of machine learning models that emphasize semantic understanding.},
+  pubstate = {preprint},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/Users/emile/Zotero/storage/MWFJ69LE/2307.html}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@unpublished{van2024independence,
+  title = {On the Independence Assumption in Neurosymbolic Learning},
+  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Minervini, Pasquale and Ponti, Edoardo M and Vergari, Antonio},
+  date = {2024},
+  eprint = {2404.08458},
+  eprinttype = {arxiv}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@unpublished{van2024uller,
+  title = {{{ULLER}}: A Unified Language for Learning and Reasoning},
+  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Badreddine, Samy and Manhaeve, Robin and Giunchiglia, Eleonora},
+  date = {2024},
+  eprint = {2405.00532},
+  eprinttype = {arxiv}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{vandenhoutenAnalysisMeasureValuedDerivatives2022,
+  title = {Analysis of {{Measure-Valued Derivatives}} in a {{Reinforcement Learning Actor-Critic Framework}}},
+  booktitle = {2022 {{Winter Simulation Conference}} ({{WSC}})},
+  author = {family=Houten, given=Kim, prefix=van den, useprefix=true and family=Krieken, given=Emile, prefix=van, useprefix=true and Heidergott, Bernd},
+  date = {2022-12},
+  pages = {2736--2747},
+  issn = {1558-4305},
+  doi = {10.1109/WSC57314.2022.10015323},
+  abstract = {Policy gradient methods are successful for a wide range of reinforcement learning tasks. Traditionally, such methods utilize the score function as stochastic gradient estimator. We investigate the effect of replacing the score function with a measure-valued derivative within an on-policy actor-critic algorithm. The hypothesis is that measure-valued derivatives reduce the need for score function variance reduction techniques that are common in policy gradient algorithms. We adapt the actor-critic to measure-valued derivatives and develop a novel algorithm. This method keeps the computational complexity of the measure-valued derivative within bounds by using a parameterized state-value function approximation. We show empirically that measure-valued derivatives have comparable performance to score functions on the environments Pendulum and MountainCar. The empirical results of this study suggest that measure-valued derivatives can serve as low-variance alternative to score functions in on-policy actor-critic and indeed reduce the need for variance reduction techniques.},
+  eventtitle = {2022 {{Winter Simulation Conference}} ({{WSC}})},
+  keywords = {Analytical models,Approximation algorithms,Computational complexity,Function approximation,Gradient methods,Reinforcement learning,Task analysis},
+  file = {/Users/emile/Zotero/storage/XCN5H6PC/10015323.html}
+}
+
+@inproceedings{vankriekenAnalyzingDifferentiableFuzzy2020,
+  title = {Analyzing Differentiable Fuzzy Implications},
+  booktitle = {Proceedings of the 17th International Conference on Principles of Knowledge Representation and Reasoning},
+  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Acar, Erman and family=Harmelen, given=Frank, prefix=van, useprefix=true},
+  date = {2020-09},
+  pages = {893--903},
+  doi = {10.24963/kr.2020/92},
+  url = {https://doi.org/10.24963/kr.2020/92}
+}
+
+@article{vankriekenAnalyzingDifferentiableFuzzy2022,
+  title = {Analyzing Differentiable Fuzzy Logic Operators},
+  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Acar, Erman and family=Harmelen, given=Frank, prefix=van, useprefix=true},
+  date = {2022},
+  journaltitle = {Artificial Intelligence},
+  volume = {302},
+  pages = {103602},
+  issn = {0004-3702},
+  doi = {10.1016/j.artint.2021.103602},
+  url = {https://www.sciencedirect.com/science/article/pii/S0004370221001533},
+  abstract = {The AI community is increasingly putting its attention towards combining symbolic and neural approaches, as it is often argued that the strengths and weaknesses of these approaches are complementary. One recent trend in the literature is weakly supervised learning techniques that employ operators from fuzzy logics. In particular, these use prior background knowledge described in such logics to help the training of a neural network from unlabeled and noisy data. By interpreting logical symbols using neural networks, this background knowledge can be added to regular loss functions, hence making reasoning a part of learning. We study, both formally and empirically, how a large collection of logical operators from the fuzzy logic literature behave in a differentiable learning setting. We find that many of these operators, including some of the most well-known, are highly unsuitable in this setting. A further finding concerns the treatment of implication in these fuzzy logics, and shows a strong imbalance between gradients driven by the antecedent and the consequent of the implication. Furthermore, we introduce a new family of fuzzy implications (called sigmoidal implications) to tackle this phenomenon. Finally, we empirically show that it is possible to use Differentiable Fuzzy Logics for semi-supervised learning, and compare how different operators behave in practice. We find that, to achieve the largest performance improvement over a supervised baseline, we have to resort to non-standard combinations of logical operators which perform well in learning, but no longer satisfy the usual logical laws.},
+  keywords = {Fuzzy logic,Learning with constraints,Neural-symbolic AI}
+}
+
+@article{vankriekenSemisupervisedLearningUsing2019,
+  ids = {vankrieken2019ravens},
+  title = {Semi-Supervised Learning Using Differentiable Reasoning},
+  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Acar, E and family=Harmelen, given=Frank, prefix=van, useprefix=true},
+  date = {2019},
+  journaltitle = {IFCoLog Journal of Logic and its Applications},
+  volume = {6},
+  number = {4},
+  pages = {633--653},
+  abstract = {We introduce Differentiable Reasoning (DR), a novel semi-supervised learning technique which uses relational background knowledge to benefit from unlabeled data. We apply it to the Semantic Image Interpretation (SII) task and show that background knowledge provides significant improvement. We find that there is a strong but interesting imbalance between the contributions of updates from Modus Ponens (MP) and its logical equivalent Modus Tollens (MT) to the learning process, suggesting that our approach is very sensitive to a phenomenon called the Raven Paradox. We propose a solution to overcome this situation.}
+}
+
+@inproceedings{vankriekenStorchasticFrameworkGeneral2021,
+  title = {Storchastic: {{A}} Framework for General Stochastic Automatic Differentiation},
+  booktitle = {Advances in Neural Information Processing Systems},
+  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Tomczak, Jakub and Ten Teije, Annette},
+  editor = {Ranzato, M. and Beygelzimer, A. and Dauphin, Y. and Liang, P.S. and Vaughan, J. Wortman},
+  date = {2021},
+  volume = {34},
+  pages = {7574--7587},
+  publisher = {Curran Associates, Inc.},
+  url = {https://proceedings.neurips.cc/paper/2021/file/3dfe2f633108d604df160cd1b01710db-Paper.pdf}
 }
