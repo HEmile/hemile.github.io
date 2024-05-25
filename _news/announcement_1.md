@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I successfully defended my PhD at the Vrije Universiteit with Cum Laude distinction (top 5%). 
+I successfully defended [my PhD thesis](https://research.vu.nl/en/publications/optimisation-in-neurosymbolic-learning-systems) at the Vrije Universiteit with Cum Laude distinction (top 5%). 
