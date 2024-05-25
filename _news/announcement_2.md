@@ -6,4 +6,4 @@ inline: false
 related_posts: false
 ---
 
-Out paper "On the Independence Assumption in Probabilistic Neurosymbolic Learning" is accepted at ICML 2024. 
+Our paper "[On the Independence Assumption in Probabilistic Neurosymbolic Learning](https://arxiv.org/abs/2404.08458)" is accepted at ICML 2024. 
