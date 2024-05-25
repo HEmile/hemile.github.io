@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://hemile.github.io/sitemap.xml
+Sitemap: https://emilevankrieken.com/sitemap.xml
