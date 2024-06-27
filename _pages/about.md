@@ -23,4 +23,4 @@ My research combines symbolic reasoning and machine learning, or “_Neurosymbol
 
 I’m also interested in Personal Knowledge Management and developed [Juggl](https://juggl.io/), a plugin for Obsidian.md that adds a customizable graph view. Other plugins include [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links).
 
-I also compose music. [Here are some songs I made](http://emilevankrieken.bandcamp.com/)!
+I composed some music: [You can listen to some songs here](http://emilevankrieken.bandcamp.com/)!
