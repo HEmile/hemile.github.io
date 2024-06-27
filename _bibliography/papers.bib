@@ -1,5 +1,97 @@
 ---
 ---
+@misc{bortolotti2024benchmarksuitesystematicallyevaluating,
+  abbr = {Dataset},
+  title = {A Benchmark Suite for Systematically Evaluating Reasoning Shortcuts},
+  author = {Samuele Bortolotti and Emanuele Marconato and Tommaso Carraro and
+            Paolo Morettin and {van Krieken}, Emile and Antonio Vergari and
+            Stefano Teso and Andrea Passerini},
+  abstract = {The advent of powerful neural classifiers has increased interest
+              in problems that require both learning and reasoning. These
+              problems are critical for understanding important properties of
+              models, such as trustworthiness, generalization, interpretability,
+              and compliance to safety and structural constraints. However,
+              recent research observed that tasks requiring both learning and
+              reasoning on background knowledge often suffer from reasoning
+              shortcuts (RSs): predictors can solve the downstream reasoning task
+              without associating the correct concepts to the high-dimensional
+              data. To address this issue, we introduce rsbench, a comprehensive
+              benchmark suite designed to systematically evaluate the impact of
+              RSs on models by providing easy access to highly customizable tasks
+              affected by RSs. Furthermore, rsbench implements common metrics for
+              evaluating concept quality and introduces novel formal verification
+              procedures for assessing the presence of RSs in learning tasks.
+              Using rsbench, we highlight that obtaining high quality concepts in
+              both purely neural and neuro-symbolic models is a far-from-solved
+              problem. rsbench is available at: this https URL. },
+  year = {2024},
+  eprint = {2406.10368},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  url = {https://arxiv.org/abs/2406.10368},
+}
+
+@misc{gema2024mmlu,
+  abbr = {Dataset},
+  title = {Are We Done with MMLU?},
+  author = {Aryo Pradipta Gema and Joshua Ong Jun Leang and Giwon Hong and
+            Alessio Devoto and Alberto Carlo Maria Mancino and Rohit Saxena and
+            Xuanli He and Yu Zhao and Xiaotang Du and Mohammad Reza Ghasemi
+            Madani and Claire Barale and Robert McHardy and Joshua Harris and
+            Jean Kaddour and {van Krieken}, Emile and Pasquale Minervini},
+  abstract = {Maybe not. We identify and analyse errors in the popular Massive
+              Multitask Language Understanding (MMLU) benchmark. Even though MMLU
+              is widely adopted, our analysis demonstrates numerous ground truth
+              errors that obscure the true capabilities of LLMs. For example, we
+              find that 57% of the analysed questions in the Virology subset
+              contain errors. To address this issue, we introduce a comprehensive
+              framework for identifying dataset errors using a novel error
+              taxonomy. Then, we create MMLU-Redux, which is a subset of 3,000
+              manually re-annotated questions across 30 MMLU subjects. Using
+              MMLU-Redux, we demonstrate significant discrepancies with the model
+              performance metrics that were originally reported. Our results
+              strongly advocate for revising MMLU's error-ridden questions to
+              enhance its future utility and reliability as a benchmark.
+              Therefore, we open up MMLU-Redux for additional annotation this
+              https URL. },
+  year = {2024},
+  eprint = {2406.04127},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  url = {https://arxiv.org/abs/2406.04127},
+}
+
+@inproceedings{uller2024,
+  abbr = {NeSy},
+  title = {ULLER: A Unified Language for Learning and Reasoning},
+  author = {{van Krieken}, Emile and Badreddine, Samy and Manhaeve, Robin and
+            Giunchiglia, Eleonora },
+  booktitle = {18th International Conference on Neural-Symbolic Learning and
+               Reasoning},
+  year = {2024},
+  eprint = {2404.08458},
+  eprinttype = {arxiv},
+  selected = {true},
+  abstract = {The field of neuro-symbolic artificial intelligence (NeSy), which
+              combines learning and reasoning, has recently experienced
+              significant growth. There now are a wide variety of NeSy frameworks
+              , each with its own specific language for expressing background
+              knowledge and how to relate it to neural networks. This
+              heterogeneity hinders accessibility for newcomers and makes
+              comparing different NeSy frameworks challenging. We propose a
+              unified language for NeSy, which we call ULLER, a Unified Language
+              for LEarning and Reasoning. ULLER encompasses a wide variety of
+              settings, while ensuring that knowledge described in it can be used
+              in existing NeSy systems. ULLER has a neuro-symbolic first-order
+              syntax for which we provide example semantics including classical,
+              fuzzy, and probabilistic logics. We believe ULLER is a first step
+              towards making NeSy research more accessible and comparable, paving
+              the way for libraries that streamline training and evaluation
+              across a multitude of semantics, knowledge bases, and NeSy systems.
+              },
+  arxiv = {2404.08458},
+}
+
 
 @article{alivanistos2022prompting,
   abbr = {Competition winner},
@@ -20,10 +112,25 @@
   doi = {10.1007/s10994-023-06310-3},
   url = {https://doi.org/10.1007/s10994-023-06310-3},
   urldate = {2023-03-29},
-  abstract = {Recent work has shown learning systems can use logical background knowledge to compensate for a lack of labeled training data. Many methods work by creating a loss function that encodes this knowledge. However, often the logic is discarded after training, even if it is still helpful at test time. Instead, we ensure neural network predictions satisfy the knowledge by refining the predictions with an extra computation step. We introduce differentiable refinement functions that find a corrected prediction close to the original prediction. We study how to effectively and efficiently compute these refinement functions. Using a new algorithm called iterative local refinement (ILR), we combine refinement functions to find refined predictions for logical formulas of any complexity. ILR finds refinements on complex SAT formulas in significantly fewer iterations and frequently finds solutions where gradient descent can not. Finally, ILR produces competitive results in the MNIST addition task.},
+  abstract = {Recent work has shown learning systems can use logical background
+              knowledge to compensate for a lack of labeled training data. Many
+              methods work by creating a loss function that encodes this
+              knowledge. However, often the logic is discarded after training,
+              even if it is still helpful at test time. Instead, we ensure neural
+              network predictions satisfy the knowledge by refining the
+              predictions with an extra computation step. We introduce
+              differentiable refinement functions that find a corrected
+              prediction close to the original prediction. We study how to
+              effectively and efficiently compute these refinement functions.
+              Using a new algorithm called iterative local refinement (ILR), we
+              combine refinement functions to find refined predictions for
+              logical formulas of any complexity. ILR finds refinements on
+              complex SAT formulas in significantly fewer iterations and
+              frequently finds solutions where gradient descent can not. Finally,
+              ILR produces competitive results in the MNIST addition task.},
   langid = {english},
   keywords = {Fuzzy logic,Neurosymbolic AI,Optimization},
-  arxiv = {2206.04976}
+  arxiv = {2206.04976},
 }
 
 @inproceedings{heinerman2018benefits,
@@ -33,7 +140,7 @@
   author = {Heinerman, Jacqueline and Bussmann, Bart and Groenendijk, Rick and Van Krieken, Emile and Slik, Jesper and Tezza, Alessandro and Haasdijk, Evert and family=Eiben, given=AE, given-i=AE},
   date = {2018},
   pages = {851--858},
-  publisher = {IEEE}
+  publisher = {IEEE},
 }
 
 @article{PhysRev.47.777,
@@ -66,7 +173,8 @@
 
 @inproceedings{NEURIPS2023_4d9944ab,
   abbr = {NeurIPS},
-  title = {A-{{NeSI}}: {{A}} Scalable Approximate Method for Probabilistic Neurosymbolic Inference},
+  title = {A-{{NeSI}}: {{A}} Scalable Approximate Method for Probabilistic
+           Neurosymbolic Inference},
   booktitle = {Advances in Neural Information Processing Systems},
   author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Thanapalasingam, Thiviyan and Tomczak, Jakub and family=Harmelen, given=Frank, prefix=van, useprefix=true and Ten Teije, Annette},
   editor = {Oh, A. and Neumann, T. and Globerson, A. and Saenko, K. and Hardt, M. and Levine, S.},
@@ -74,10 +182,28 @@
   volume = {36},
   pages = {24586--24609},
   publisher = {Curran Associates, Inc.},
-  url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/4d9944ab3330fe6af8efb9260aa9f307-Paper-Conference.pdf},
-  abstract = {We study the problem of combining neural networks with symbolic reasoning. Recently introduced frameworks for Probabilistic Neurosymbolic Learning (PNL), such as DeepProbLog, perform exponential-time exact inference, limiting the scalability of PNL solutions. We introduce Approximate Neurosymbolic Inference (A-NeSI): a new framework for PNL that uses neural networks for scalable approximate inference. A-NeSI 1) performs approximate inference in polynomial time without changing the semantics of probabilistic logics; 2) is trained using data generated by the background knowledge; 3) can generate symbolic explanations of predictions; and 4) can guarantee the satisfaction of logical constraints at test time, which is vital in safety-critical applications. Our experiments show that A-NeSI is the first end-to-end method to solve three neurosymbolic tasks with exponential combinatorial scaling. Finally, our experiments show that A-NeSI achieves explainability and safety without a penalty in performance.},
+  url = {
+         https://proceedings.neurips.cc/paper_files/paper/2023/file/4d9944ab3330fe6af8efb9260aa9f307-Paper-Conference.pdf
+         },
+  abstract = {We study the problem of combining neural networks with symbolic
+              reasoning. Recently introduced frameworks for Probabilistic
+              Neurosymbolic Learning (PNL), such as DeepProbLog, perform
+              exponential-time exact inference, limiting the scalability of PNL
+              solutions. We introduce Approximate Neurosymbolic Inference
+              (A-NeSI): a new framework for PNL that uses neural networks for
+              scalable approximate inference. A-NeSI 1) performs approximate
+              inference in polynomial time without changing the semantics of
+              probabilistic logics; 2) is trained using data generated by the
+              background knowledge; 3) can generate symbolic explanations of
+              predictions; and 4) can guarantee the satisfaction of logical
+              constraints at test time, which is vital in safety-critical
+              applications. Our experiments show that A-NeSI is the first
+              end-to-end method to solve three neurosymbolic tasks with
+              exponential combinatorial scaling. Finally, our experiments show
+              that A-NeSI achieves explainability and safety without a penalty in
+              performance.},
   arxiv = {2212.12393},
   selected = {true},
-  code = {https://github.com/HEmile/a-nesi}
+  code = {https://github.com/HEmile/a-nesi},
 }
 
