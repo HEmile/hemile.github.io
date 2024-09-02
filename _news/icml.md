@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am giving a talk at the [Differentiable Almost Everything](https://differentiable.xyz/) ICML 2024 workshop.
+I am giving a keynote talk at the [Differentiable Almost Everything](https://differentiable.xyz/) ICML 2024 workshop.
