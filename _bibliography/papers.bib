@@ -1,7 +1,7 @@
 ---
 ---
-@misc{bortolotti2024benchmarksuitesystematicallyevaluating,
-  abbr = {Dataset},
+@inproceedings{bortolotti2024benchmarksuitesystematicallyevaluating,
+  abbr = {Dataset, NeurIPS},
   title = {A Benchmark Suite for Systematically Evaluating Reasoning Shortcuts},
   author = {Samuele Bortolotti and Emanuele Marconato and Tommaso Carraro and
             Paolo Morettin and {van Krieken}, Emile and Antonio Vergari and
@@ -25,6 +25,7 @@
               both purely neural and neuro-symbolic models is a far-from-solved
               problem. rsbench is available at: this https URL. },
   year = {2024},
+  booktitle = {Advances in Neural Information Processing Systems},
   eprint = {2406.10368},
   archivePrefix = {arXiv},
   primaryClass = {cs.LG},
@@ -96,7 +97,7 @@
 @article{alivanistos2022prompting,
   abbr = {Competition winner},
   title = {Prompting as Probing: {{Using}} Language Models for Knowledge Base Construction},
-  author = {Alivanistos, Dimitrios and Báez Santamarı́a, Selene and Cochez, Michael and Kalo, Jan Christoph and van Krieken, Emile and Thanapalasingam, T and others},
+  author = {Alivanistos, Dimitrios and Báez Santamarı́a, Selene and Cochez, Michael and Kalo, Jan Christoph and {van Krieken}, Emile and Thanapalasingam, T and others},
   year = {2022},
   publisher = {AachenCEUR-WS}
 }
@@ -104,7 +105,7 @@
 @inproceedings{danieleRefiningNeuralNetwork2023a,
   abbr = {ML Journal},
   title = {Refining Neural Network Predictions Using Background Knowledge},
-  author = {Daniele, Alessandro and van Krieken, Emile and Serafini, Luciano and van Harmelen, Frank},
+  author = {Daniele, Alessandro and {van Krieken}, Emile and Serafini, Luciano and {van Harmelen}, Frank},
   year = {2023},
   journal = {Machine Learning},
   shortjournal = {Mach Learn},
@@ -137,7 +138,7 @@
   abbr = {IEEE SSCI},
   title = {Benefits of Social Learning in Physical Robots},
   booktitle = {2018 {{IEEE}} Symposium Series on Computational Intelligence ({{SSCI}})},
-  author = {Heinerman, Jacqueline and Bussmann, Bart and Groenendijk, Rick and van Krieken, Emile and Slik, Jesper and Tezza, Alessandro and Haasdijk, Evert and Eiben, A. E.},
+  author = {Heinerman, Jacqueline and Bussmann, Bart and Groenendijk, Rick and {van Krieken}, Emile and Slik, Jesper and Tezza, Alessandro and Haasdijk, Evert and Eiben, A. E.},
   year = {2018},
   pages = {851--858},
   publisher = {IEEE},
@@ -148,7 +149,7 @@
   title = {A-{{NeSI}}: {{A}} Scalable Approximate Method for Probabilistic
            Neurosymbolic Inference},
   booktitle = {Advances in Neural Information Processing Systems},
-  author = {family=Krieken, given=Emile, prefix=van, useprefix=true and Thanapalasingam, Thiviyan and Tomczak, Jakub and family=Harmelen, given=Frank, prefix=van, useprefix=true and Ten Teije, Annette},
+  author = {{van Krieken}, Emile and Thanapalasingam, Thiviyan and Tomczak, Jakub and van Harmelen, Frank and Ten Teije, Annette},
   editor = {Oh, A. and Neumann, T. and Globerson, A. and Saenko, K. and Hardt, M. and Levine, S.},
   year = {2023},
   volume = {36},
@@ -179,3 +180,97 @@
   code = {https://github.com/HEmile/a-nesi},
 }
 
+@online{thanapalasingamIntelliGraphsDatasetsBenchmarking2023,
+  abbr = {Dataset},
+  title = {{{IntelliGraphs}}: {{Datasets}} for {{Benchmarking Knowledge Graph Generation}}},
+  shorttitle = {{{IntelliGraphs}}},
+  author = {Thanapalasingam, Thiviyan and {van Krieken}, Emile and Bloem, Peter and Groth, Paul},
+  year = {2023},
+  eprint = {2307.06698},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2307.06698},
+  url = {http://arxiv.org/abs/2307.06698},
+  urldate = {2023-07-19},
+  abstract = {Knowledge Graph Embedding (KGE) models are used to learn continuous representations of entities and relations. A key task in the literature is predicting missing links between entities. However, Knowledge Graphs are not just sets of links but also have semantics underlying their structure. Semantics is crucial in several downstream tasks, such as query answering or reasoning. We introduce the subgraph inference task, where a model has to generate likely and semantically valid subgraphs. We propose IntelliGraphs, a set of five new Knowledge Graph datasets. The IntelliGraphs datasets contain subgraphs with semantics expressed in logical rules for evaluating subgraph inference. We also present the dataset generator that produced the synthetic datasets. We designed four novel baseline models, which include three models based on traditional KGEs. We evaluate their expressiveness and show that these models cannot capture the semantics. We believe this benchmark will encourage the development of machine learning models that emphasize semantic understanding.},
+  pubstate = {preprint},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/Users/emile/Zotero/storage/MWFJ69LE/2307.html}
+}
+
+@inproceedings{van2024independence,
+  abbr = {ICML},
+  title = {On the Independence Assumption in Neurosymbolic Learning},
+  author = {{van Krieken}, Emile and Minervini, Pasquale and Ponti, Edoardo M and Vergari, Antonio},
+  year = {2024},
+  eprint = {2404.08458},
+  eprinttype = {arxiv},
+  selected = {true},
+}
+
+@inproceedings{vandenhoutenAnalysisMeasureValuedDerivatives2022,
+  title = {Analysis of {{Measure-Valued Derivatives}} in a {{Reinforcement Learning Actor-Critic Framework}}},
+  booktitle = {2022 {{Winter Simulation Conference}} ({{WSC}})},
+  author = {van den Houten, Kim and {van Krieken}, Emile and Heidergott, Bernd},
+  year = {2022},
+  pages = {2736--2747},
+  issn = {1558-4305},
+  doi = {10.1109/WSC57314.2022.10015323},
+  abstract = {Policy gradient methods are successful for a wide range of reinforcement learning tasks. Traditionally, such methods utilize the score function as stochastic gradient estimator. We investigate the effect of replacing the score function with a measure-valued derivative within an on-policy actor-critic algorithm. The hypothesis is that measure-valued derivatives reduce the need for score function variance reduction techniques that are common in policy gradient algorithms. We adapt the actor-critic to measure-valued derivatives and develop a novel algorithm. This method keeps the computational complexity of the measure-valued derivative within bounds by using a parameterized state-value function approximation. We show empirically that measure-valued derivatives have comparable performance to score functions on the environments Pendulum and MountainCar. The empirical results of this study suggest that measure-valued derivatives can serve as low-variance alternative to score functions in on-policy actor-critic and indeed reduce the need for variance reduction techniques.},
+  eventtitle = {2022 {{Winter Simulation Conference}} ({{WSC}})},
+  keywords = {Analytical models,Approximation algorithms,Computational complexity,Function approximation,Gradient methods,Reinforcement learning,Task analysis},
+  file = {/Users/emile/Zotero/storage/XCN5H6PC/10015323.html}
+}
+
+@inproceedings{vankriekenAnalyzingDifferentiableFuzzy2020,
+  abbr = {KR},
+  title = {Analyzing Differentiable Fuzzy Implications},
+  booktitle = {Proceedings of the 17th International Conference on Principles of Knowledge Representation and Reasoning},
+  author = {{van Krieken}, Emile and Acar, Erman and {van Harmelen}, Frank},
+  year = {2020},
+  pages = {893--903},
+  doi = {10.24963/kr.2020/92},
+  url = {https://doi.org/10.24963/kr.2020/92}
+}
+
+@article{vankriekenAnalyzingDifferentiableFuzzy2022,
+  abbr = {AI Journal},
+  title = {Analyzing Differentiable Fuzzy Logic Operators},
+  author = {{van Krieken}, Emile and Acar, Erman and {van Harmelen}, Frank},
+  year = {2022},
+  journal = {Artificial Intelligence},
+  volume = {302},
+  pages = {103602},
+  issn = {0004-3702},
+  doi = {10.1016/j.artint.2021.103602},
+  url = {https://www.sciencedirect.com/science/article/pii/S0004370221001533},
+  abstract = {The AI community is increasingly putting its attention towards combining symbolic and neural approaches, as it is often argued that the strengths and weaknesses of these approaches are complementary. One recent trend in the literature is weakly supervised learning techniques that employ operators from fuzzy logics. In particular, these use prior background knowledge described in such logics to help the training of a neural network from unlabeled and noisy data. By interpreting logical symbols using neural networks, this background knowledge can be added to regular loss functions, hence making reasoning a part of learning. We study, both formally and empirically, how a large collection of logical operators from the fuzzy logic literature behave in a differentiable learning setting. We find that many of these operators, including some of the most well-known, are highly unsuitable in this setting. A further finding concerns the treatment of implication in these fuzzy logics, and shows a strong imbalance between gradients driven by the antecedent and the consequent of the implication. Furthermore, we introduce a new family of fuzzy implications (called sigmoidal implications) to tackle this phenomenon. Finally, we empirically show that it is possible to use Differentiable Fuzzy Logics for semi-supervised learning, and compare how different operators behave in practice. We find that, to achieve the largest performance improvement over a supervised baseline, we have to resort to non-standard combinations of logical operators which perform well in learning, but no longer satisfy the usual logical laws.},
+  keywords = {Fuzzy logic,Learning with constraints,Neural-symbolic AI}
+}
+
+@article{vankriekenSemisupervisedLearningUsing2019,
+  abbr = {IFCoLog},
+  ids = {vankrieken2019ravens},
+  title = {Semi-Supervised Learning Using Differentiable Reasoning},
+  author = {{van Krieken}, Emile and Acar, Erman and {van Harmelen}, Frank},
+  year = {2019},
+  journal = {IFCoLog Journal of Logic and its Applications},
+  volume = {6},
+  number = {4},
+  pages = {633--653},
+  abstract = {We introduce Differentiable Reasoning (DR), a novel semi-supervised learning technique which uses relational background knowledge to benefit from unlabeled data. We apply it to the Semantic Image Interpretation (SII) task and show that background knowledge provides significant improvement. We find that there is a strong but interesting imbalance between the contributions of updates from Modus Ponens (MP) and its logical equivalent Modus Tollens (MT) to the learning process, suggesting that our approach is very sensitive to a phenomenon called the Raven Paradox. We propose a solution to overcome this situation.}
+}
+
+@inproceedings{vankriekenStorchasticFrameworkGeneral2021,
+  abbr = {NeurIPS},
+  title = {Storchastic: {{A}} Framework for General Stochastic Automatic Differentiation},
+  booktitle = {Advances in Neural Information Processing Systems},
+  author = {{van Krieken}, Emile and Tomczak, Jakub and Ten Teije, Annette},
+  editor = {Ranzato, M. and Beygelzimer, A. and Dauphin, Y. and Liang, P.S. and Vaughan, J. Wortman},
+  year = {2021},
+  volume = {34},
+  pages = {7574--7587},
+  publisher = {Curran Associates, Inc.},
+  selected = {true},
+  url = {https://proceedings.neurips.cc/paper/2021/file/3dfe2f633108d604df160cd1b01710db-Paper.pdf}
+}
