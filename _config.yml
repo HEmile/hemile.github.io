@@ -384,7 +384,7 @@ enable_publication_thumbnails: true
 # These are the defaults
 external_links:
   enabled: true
-  rel: external nofollow noopener
+  rel: external
   target: _blank
   exclude:
 
@@ -422,10 +422,6 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
-
-external_links:
-  enabled: true
-  rel: external 
 
 
 enable_google_analytics: false # enables google analytics
