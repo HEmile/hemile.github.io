@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "[A Neuro-Symbolic Benchmark Suite for Concept Quality and Reasoning Shortcuts](https://arxiv.org/abs/2406.10368)" is accepted at the NeurIPS 2025 Datasets and Benchmarks track. 
+Our paper "[A Neuro-Symbolic Benchmark Suite for Concept Quality and Reasoning Shortcuts](https://arxiv.org/abs/2406.10368)" is accepted at the **NeurIPS 2025** Datasets and Benchmarks track. 
