@@ -382,6 +382,7 @@ enable_publication_thumbnails: true
 # -----------------------------------------------------------------------------
 
 # These are the defaults
+# Default adds nofollow and noopener... but I'm trying to get SEO benefits for external links
 external_links:
   enabled: true
   rel: external
