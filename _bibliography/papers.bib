@@ -1,14 +1,28 @@
 ---
 ---
-@misc{vankrieken2025neurosymbolicdiffusionmodels,
+
+
+@inproceedings{vankrieken2025neurosymbolicdiffusionmodels,
+      abbr = {NeurIPS},
+      selected = {true},
       title={Neurosymbolic Diffusion Models}, 
       author={Emile {van Krieken} and Pasquale Minervini and Edoardo Ponti and Antonio Vergari},
+      booktitle = {Advances in Neural Information Processing Systems},
       year={2025},
       eprint={2505.13138},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       abstract = {Neurosymbolic (NeSy) predictors combine neural perception with symbolic reasoning to solve tasks like visual reasoning. However, standard NeSy predictors assume conditional independence between the symbols they extract, thus limiting their ability to model interactions and uncertainty - often leading to overconfident predictions and poor out-of-distribution generalisation. To overcome the limitations of the independence assumption, we introduce neurosymbolic diffusion models (NeSyDMs), a new class of NeSy predictors that use discrete diffusion to model dependencies between symbols. Our approach reuses the independence assumption from NeSy predictors at each step of the diffusion process, enabling scalable learning while capturing symbol dependencies and uncertainty quantification. Across both synthetic and real-world benchmarks - including high-dimensional visual path planning and rule-based autonomous driving - NeSyDMs achieve state-of-the-art accuracy among NeSy predictors and demonstrate strong calibration.},
       url={https://arxiv.org/abs/2505.13138}, 
+}
+
+@inproceedings{krieken2025neurosymbolic,
+  abbr = {NeSy (SPOTLIGHT)},
+  title={Neurosymbolic Reasoning Shortcuts under the Independence Assumption},
+  author={Emile van Krieken and Pasquale Minervini and Edoardo Ponti and Antonio Vergari},
+  booktitle={19th International Conference on Neurosymbolic Learning and Reasoning},
+  year={2025},
+  url={https://openreview.net/forum?id=ifoKXDf1KS}
 }
 
 @inproceedings{bortolotti2024benchmarksuitesystematicallyevaluating,
@@ -331,3 +345,4 @@
   abstract={Large language models (LLMs) remain prone to factual inaccuracies and computational errors, including hallucinations and mistakes in mathematical reasoning. Recent work augmented LLMs with tools to mitigate these shortcomings, but often requires curated gold tool-use demonstrations. In this paper, we investigate whether LLMs can learn to use tools without demonstrations. First, we analyse zero-shot prompting strategies to guide LLMs in tool utilisation. Second, we propose a self-training method to synthesise tool-use traces using the LLM itself. We compare supervised fine-tuning and preference fine-tuning techniques for fine-tuning the model on datasets constructed using existing Question Answering (QA) datasets, i.e., TriviaQA and GSM8K. Experiments show that tool-use enhances performance on a long-tail knowledge task: 3.7% on PopQA, which is used solely for evaluation, but leads to mixed results on other datasets, i.e., TriviaQA, GSM8K, and NQ-Open. Our findings highlight the potential and challenges of integrating external tools into LLMs without demonstrations.},
   year={2025}
 }
+
