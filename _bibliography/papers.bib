@@ -81,9 +81,7 @@
               Therefore, we open up MMLU-Redux for additional annotation this
               https URL. },
   year = {2025},
-  booktitle = {Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
-  eprint = {2406.04127},
-  archivePrefix = {arXiv},
+  booktitle = {Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics},
   primaryClass = {cs.CL},
   url = {https://arxiv.org/abs/2406.04127},
 }
@@ -328,13 +326,15 @@
   abstract = {In-context learning (ICL) adapts LLMs by providing demonstrations without fine-tuning the model parameters; however, it does not differentiate between demonstrations and quadratically increases the complexity of Transformer LLMs, exhausting the memory. As a solution, we propose Mixtures of In-Context Learners (MoICL), a novel approach to treat subsets of demonstrations as experts and learn a weighting function to merge their output distributions based on a training set. In our experiments, we show performance improvements on 5 out of 7 classification datasets compared to a set of strong baselines (up to +13\% compared to ICL and LENS). Moreover, we enhance the Pareto frontier of ICL by reducing the inference time needed to achieve the same performance with fewer demonstrations. Finally, MoICL is more robust to out-of-domain (up to +11\%), imbalanced (up to +49\%), or noisy demonstrations (up to +38\%) or can filter these out from datasets. Overall, MoICL is a more expressive approach to learning from demonstrations without exhausting the context window or memory.}
 }
 
-@article{younesian2023grapes,
-  title={GRAPES: Learning to sample graphs for scalable graph neural networks},
-  author={Younesian, Taraneh and Daza, Daniel and {van Krieken}, Emile and Thanapalasingam, Thiviyan and Bloem, Peter},
-  journal={arXiv preprint arXiv:2310.03399},
-  year={2024},
-  arxiv = {2310.03399},
-  abstract = {Graph neural networks (GNNs) learn to represent nodes by aggregating information from their neighbors. As GNNs increase in depth, their receptive field grows exponentially, leading to high memory costs. Several existing methods address this by sampling a small subset of nodes, scaling GNNs to much larger graphs. These methods are primarily evaluated on homophilous graphs, where neighboring nodes often share the same label. However, most of these methods rely on static heuristics that may not generalize across different graphs or tasks. We argue that the sampling method should be adaptive, adjusting to the complex structural properties of each graph. To this end, we introduce GRAPES, an adaptive sampling method that learns to identify the set of nodes crucial for training a GNN. GRAPES trains a second GNN to predict node sampling probabilities by optimizing the downstream task objective. We evaluate GRAPES on various node classification benchmarks, involving homophilous as well as heterophilous graphs. We demonstrate GRAPES' effectiveness in accuracy and scalability, particularly in multi-label heterophilous graphs. Unlike other sampling methods, GRAPES maintains high accuracy even with smaller sample sizes and, therefore, can scale to massive graphs. Our code is publicly available at this https URL.}
+@article{
+younesian2025grapes,
+title={{GRAPES}: Learning to Sample Graphs for Scalable Graph Neural Networks},
+author={Taraneh Younesian and Daniel Daza and Emile van Krieken and Thiviyan Thanapalasingam and Peter Bloem},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2025},
+url={https://openreview.net/forum?id=QI0l842vSq},
+note={}
 }
 
 @article{luo2025self,
