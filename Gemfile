@@ -7,7 +7,7 @@ group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'jekyll-get-json'
     gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
+    # gem 'jekyll-jupyter-notebook'
     gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
@@ -26,3 +26,7 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
+
+# Required for Ruby 3.4+ compatibility
+gem 'observer'
+gem 'resolver'
