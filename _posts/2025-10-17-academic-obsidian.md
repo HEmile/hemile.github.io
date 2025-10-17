@@ -166,7 +166,7 @@ Please read on.
 
 
 ## Hotkeys
-Some important hotkeys that come pre-installed with the [template](https://github.com/HEmile/academic-obsidian):
+Some important hotkeys that come pre-installed with the [template](https://github.com/HEmile/academic-obsidian) (for Mac):
 - `cmd + O`: Open quick switcher
 - `cmd + control + O`: Open omnisearch
 - `cmd + Enter`: Open link under cursor in new tab (seriously great together with VIM)
@@ -177,6 +177,8 @@ Some important hotkeys that come pre-installed with the [template](https://githu
 - `control + I`: Navigate forward
 - `cmd + J`: Hide/show left sidebar
 - `cmd + K`: Hide/show right sidebar
+- `cmd + T`: Open new tab
+- `cmd + W`: Close current tab
 
 ## Other types of notes
 Some other types of notes I use that are mostly quite similar to the four ones described above. 
@@ -195,9 +197,9 @@ Anything else? You know where to find me. I hope.
 - **How about meeting notes?** I find doing this in Obsidian is actually often not that useful. Meeting notes very non-evergreen, and 'dilute' your vault quite a lot, staying only relevant for a few weeks usually. Furthermore, they're often together with others in, for example, a Google Docs. Since Obsidian is really single-user, sharing markdown files around is just... Annoying? If anything, I sometimes put some action items in my project notes, depending to the degree of communication and infrastructure of the project. 
 - **What do you think about \<latest plugin X\>?** I've stopped following the latest plugins as I do not currently have any real pain points in my Obsidian setup. Well, there is one: I don't have enough time to build and maintain my notes because academic life is so hectic. But I'm afraid no plugin is going to fix that.
 - **How about things that are not work?** Oh boy, I could write a whole another blog post about this. I also have a very nice setup, quite similar in spirit to this one. But unfortunately, the main issue is the one described above. 
-- **Not even LLM plugins??? I thought you worked on AI?** Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words and understanding, and to go back and view [what **you** understood about it](https://stephango.com/understand). (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.) 
+- **Not even LLM plugins??? I thought you worked on AI?** Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words, and to go back and view [what **you** understood about it](https://stephango.com/understand). (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.) 
 - **What is your folder structure?** I only use tags to indicate note types. I do not use any folder structure, all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
-- **Do you have index notes / maps of content?** Nope, not worth the maintenance time imo. Going through backlinks on topic notes is usually sufficient for retrieval. 
+- **Do you have index notes / maps of content?** Nope, not worth the maintenance time imo. Going through backlinks and simple search is sufficient for retrieval. 
 - **Should I create a separate note for concept or topic X? Or put it as part of note Y?** 
 Look, I don't have any real guidelines here, not even for myself. It's just gut instinct at this point. If I think a note gets too bloated, I sometimes split it up. But I also don't want all kinds of mini notes about the most niche concepts. 
 Most importantly, **don't overthink this**. 
