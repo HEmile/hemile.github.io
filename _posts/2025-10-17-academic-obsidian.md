@@ -2,7 +2,7 @@
 layout: post
 title: How I use Obsidian for academic work
 date: 2025-10-16 10:40:16
-description: Some description
+description: This post gives an overview of how I use Obsidian for academic research work. I use it to manage papers, talks, topics, concepts and projects in a Knowledge Graph-inspired setup.
 tags: productivity
 categories: productivity
 ---
