@@ -62,7 +62,7 @@ Then, you can see a whole bunch of metadata ([Properties](https://help.obsidian.
 - `project`: This is a typed link to project notes for which the paper is relevant. 
 - `publishedIn`: This is a typed link to a note for the journal or conference in which the paper was published. 
 
-After that comes the main note. In this example, I summarise the paper, linking to relevant concepts discussed in the meanwhile. I also often give my opinion of the paper for future reference. 
+After that comes the main content of the note. In this example, I summarise the paper, linking to relevant concepts discussed in the meanwhile. I also often give my opinion of the paper for future reference. 
 
 This might sound like a lot of work to manage for each paper, but plugins like [Templater](https://github.com/SilentVoid13/Templater) and, in particular, [the citations plugin](https://github.com/hans/obsidian-citation-plugin) make this seamless. I will explain in the Plugins section below how I set those up. 
 
@@ -83,7 +83,7 @@ When you use `hasTopic` from papers and talks to topic notes, they will appear a
 
 
 Concept notes describe and define concepts. I use an exorbitant number of `aliases`, as you can see in this example: A monotone function, for example, can be monotone because it is increasing or decreasing. It is really not needed to make separate concepts for those, as these concepts are highly related and should be grouped together. 
-I mainly use two types of typed links: `hasTopic` indicates the field of study that this concept is relevant for, and `isA` provides a hierarchy of concepts. In this example, monotonicity is studied within mathematics, but a monotone function is a particular type of function. 
+I mainly use two types of typed links: `hasTopic` indicates the field of study that this concept is relevant for, and `isA` provides a hierarchy of concepts. In this example, monotonicity is studied within mathematics, and a monotone function is a particular type of function. 
 
 ## Project notes (red)
 <img src="/assets/img/project-example.png" alt="Project note" style="width:70%; height:auto;" />
@@ -107,7 +107,7 @@ This is because of this plugin!
 It's honestly a huge life-saver: When I scroll through a search, or look at a note, I can immediately see if it is a paper, a concept, a project, etc. 
 So when I search for something specific, I can open the quick switcher and visually filter by one of the colours without having to type an explicit filter. 
 
-In addition, I programmed a few extras for this vault, such as that paper notes automatically indicate the year of publication and the venue they were published in. And for ideas, it shows the score I assign to it. 
+In addition, I programmed a few extras for this vault, such as that paper notes automatically indicate the year of publication and the venue they were published in. And for ideas, it shows the score. 
 Setting this up is not hard, but requires a bit of tweaking with CSS. I would suggest to start with the [template](https://github.com/HEmile/academic-obsidian) and work from there. 
 
 ## [Citations](https://github.com/hans/obsidian-citation-plugin)
@@ -117,9 +117,9 @@ That is what I also used... But honestly, it was too slow. Waiting for Zotero to
 Instead, I use a custom-built version of this plugin available [here](https://github.com/HEmile/academic-obsidian/tree/main/.obsidian/plugins/obsidian-citation-plugin), which is preinstalled in the [template](https://github.com/HEmile/academic-obsidian). This adds a new command and hotkey to **directly create a paper note from a bibtex entry on your clipboard**. 
 Then, I just find a bibtex entry online, copy it, hit the hotkey, and voila! This automatically adds the year, authors and citekey. 
 
-## Other useful plugins
+## Other really useful plugins
 - Templater: Just a must-have plugin. I use it more extensively for my personal vault, but here it's still very useful for automatically adding timestamps to my notes and getting cursors on the right place. 
-- Extended MathJax: Allows you to add a preamble for your latex. I use this a lot for eg boldfaced math. 
+- Extended MathJax: Add a preamble for your latex equations. I use this a lot for eg boldfaced math. 
 - Omnisearch: A replacement for the built-in search. It's blazing fast and clear, and works on PDFs. 
 - Pane relief: This is such a staple for me that I always forget what it does unless I turn it off and get super frustrated. Try it out!
 - Paste URL into selection: Simple, select some text, insert a link to it by pasting.
@@ -129,13 +129,12 @@ Here are some other plugins I played with that are good, but did not end up bein
 - (Core) You'll need some way to sync and backup your vault. I just use [Obsidian Sync](https://help.obsidian.md/sync). It has never failed me.
 - (Core) Bases: This is a new feature to create database-like views from your notes. I haven't played around with it enough to see if it'll stick, but it sure is well-built! However, many people seem to rely on it. The setup I described above actually barely relies on it - The core navigation and search is really based on the graph structure (ie, navigating links in notes and navigating backlinks). Therefore, I only end up using database-like views for specific use cases like reranking ideas. 
 - (Core) Canvas, Graph view: Honestly, these are fun to play with, but I never use them. GUI-based things are just too slow compared to plain text and keyboard shortcuts. 
-- (Core) Bookmarks: Interesting feature, but I tried it a bit and rarely
 - (Core) VIM support: I love VIM. If you like VIM as well, activate it. The VimRC plugin is a great complement. 
 - [Breadcrumbs plugin](https://github.com/SkepticMystic/breadcrumbs): This plugin is **insane**. It allows for truly navigating your notes as a graph (more specifically, a DAG). Why is this useful in this setup? Well, let's say you want to find all papers about the topic `Artificial Intelligence`. Currently, you could navigate to that note, and find the backlinks to it. But, then you would be missing papers that link to the subtopic `Neurosymbolic Artificial Intelligence` but not to `Artificial Intelligence`. With Breadcrumbs, you can actually hierarchically navigate through your vault, and also find the papers about `Neurosymbolic Artificial Intelligence` within a single list. Really really powerful. In practice, I end up not using it as frequently as I thought I would. However, every now and then you _really_ need it, and then you'll seriously appreciate it. 
 - [Juggl plugin](https://github.com/HEmile/juggl): This is an advanced graph view plugin I developed. You might expect me to use this a lot... But honestly, it was just too slow and clunky for daily use. Fun to play around with, and it might work for you, but I wouldn't necessarily recommend it. 
 - [PDF++ plugin](https://github.com/RyotaUshio/obsidian-pdf-plus): Many people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. 
 
-Oh, about LLM plugins: I don't use them. I might integrate one if there's one that can understand the hierarchical structure of my notes via some RAG system, but right now it's not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes is to write them in your own words and understanding, and to go back and view what **you** understood about it, not an LLM. (I am not an LLM hater at all, I use them all the time for QA, coding and assisted writing, just never in Obsidian.)
+Oh, about LLM plugins: I don't use them. I might integrate one if there's one that can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes is to write them in your own words and understanding, and to go back and view what **you** understood about it, not an LLM. (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.)
 
 ## Hotkeys
 Some important hotkeys that come pre-installed with the [template](https://github.com/HEmile/academic-obsidian):
@@ -148,3 +147,11 @@ Some important hotkeys that come pre-installed with the [template](https://githu
 - `control + I`: Navigate forward
 - `cmd + J`: Hide/show left sidebar
 - `cmd + K`: Hide/show right sidebar
+
+## Other types of notes
+- `#source/dataset`: Notes about datasets and benchmarks. 
+- `#method`: Within AI, we often compare specific methods at their performance. Many papers introduce a method. It is a waste to have separate notes for the paper and the concept it introduces. So this is a type I actually rarely use, and only for very established methods. 
+- `#method/tool` and `#method/library`: Notes about tools and libraries that can be used in academic research.
+- `#concept/problem`: Notes about open problems that are studied in the field.
+- `#venue/conference`: Notes about conferences and journals (`#venue/journal`).
+- `#institution`: Notes about institutions like universities or companies.
