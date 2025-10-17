@@ -44,9 +44,9 @@ I will introduce other types of notes as we go along.
 
 The central point of the vault is to **link maximally** between notes. This greatly increases the discoverability of your notes. 
 So, seriously: For every paper you read and want to refer in your notes, create a note, link to it. For every concept you want to discuss, link to it with `[[convex set]]`, even if you never create that note yet. Link everything! 
-Linking greatly pays off because you can use [Backlinks](https://help.obsidian.md/plugins/backlinks) to discover related notes and find (or more likely, rediscover) connections between your ideas and understanding. 
+Linking greatly pays off because you can use [Backlinks](https://help.obsidian.md/plugins/backlinks) to (re)discover related notes and connections between your ideas and understanding. 
 
-I only use tags to indicate note types, but never for anything semantic. I do not use any folder structure. Folders are strictly hierarchical, and creates walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
+I only use tags to indicate note types. I do not use any folder structure, all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
 
 # Types of notes
 Next, I'll go in more detail for each type of note and how I link them together. For each, I will provide an example from the [template on Github](https://github.com/HEmile/academic-obsidian). 
