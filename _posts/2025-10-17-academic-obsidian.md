@@ -15,7 +15,7 @@ But while I was figuring out my setup, I developed and contributed to [several](
 As many colleagues asked me about my Obsidian setup, I decided to finally get around to writing it down. 
 
 A lot is written about how to best use Obsidian
-However, those are rarely a great starting point for how I actually work in Obsidian, as I do not base my setup on a popular system like Zettelkasten/linking your thinking/atomic or evergreen notes/etc. 
+However, those are rarely a great starting point for how I actually work in Obsidian, as I do not base my setup on a popular personal knowledge management methodology like Zettelkasten/linking your thinking/atomic/evergreen notes/etc. 
 Each of these systems have great ideas but are too... bloated, rigid, or abstract for my taste. 
 My setup is as simple as it could practically be while achieving a clear goal, namely to keep track of academic literature and ideas. 
 
@@ -58,7 +58,7 @@ And there are other, more advanced, retrieval features like [Breadcrumbs](https:
 
 
 # Types of notes
-Next, I'll go in more detail for each type of note and how I link them together. For each, I will provide an example from the [template on Github](https://github.com/HEmile/academic-obsidian). Creating each type of note is easy: Use `cmd + R` to open the template modal, choose the note type, and hit enter.
+Next, I'll go in more detail for each type of note and how I link them together. For each, I will provide an example from the [template on Github](https://github.com/HEmile/academic-obsidian). Creating each type of note is easy: Use `cmd + R` to open the [template modal](https://help.obsidian.md/plugins/templates), choose the note type, and hit enter.
 You might notice each note type has a colour associated with it. I'll explain how this works in the Plugins section below. 
 
 ## Paper notes (blue)
@@ -195,8 +195,18 @@ Anything else? You know where to find me. I hope.
 - **How about meeting notes?** I find doing this in Obsidian is actually often not that useful. Meeting notes very non-evergreen, and 'dilute' your vault quite a lot, staying only relevant for a few weeks usually. Furthermore, they're often together with others in, for example, a Google Docs. Since Obsidian is really single-user, sharing markdown files around is just... Annoying? If anything, I sometimes put some action items in my project notes, depending to the degree of communication and infrastructure of the project. 
 - **What do you think about \<latest plugin X\>?** I've stopped following the latest plugins as I do not currently have any real pain points in my Obsidian setup. Well, there is one: I don't have enough time to build and maintain my notes because academic life is so hectic. But I'm afraid no plugin is going to fix that.
 - **How about things that are not work?** Oh boy, I could write a whole another blog post about this. I also have a very nice setup, quite similar in spirit to this one. But unfortunately, the main issue is the one described above. 
-- **Not even LLM plugins??? I thought you worked on AI?** Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words and understanding, and to go back and view what **you** understood about it, not an LLM. (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.) 
+- **Not even LLM plugins??? I thought you worked on AI?** Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words and understanding, and to go back and view [what **you** understood about it](https://stephango.com/understand). (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.) 
 - **What is your folder structure?** I only use tags to indicate note types. I do not use any folder structure, all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
+- **Do you have index notes / maps of content?** Nope, not worth the maintenance time imo. Going through backlinks on topic notes is usually sufficient for retrieval. 
+- **Should I create a separate note for concept or topic X? Or put it as part of note Y?** 
+Look, I don't have any real guidelines here, not even for myself. It's just gut instinct at this point. If I think a note gets too bloated, I sometimes split it up. But I also don't want all kinds of mini notes about the most niche concepts. 
+Most importantly, **don't overthink this**. 
+Merging and splitting notes in a structured vault is pretty fast, you just go through the backlinks and update some links. 
+It's much more important to write notes than to have the perfect structure.  
+- **Do you have a 'note maintenance' / evergreen note strategy?**
+Yes, but it's extremely simple: If I am writing new notes and linking, and then finding a mistake or outdated views in a related note, I update it. But I don't go out of my way to do this. 
+- **How do you manage your attachments?** I don't, I just put them all in the `files` folder. All my attachments are images I paste into notes. I'm too scared to look into the `files` folder, truth be told.  
+- **Do you clip sources or save pdfs?** Nope, too much overhead. 
 - **Oh not another AI dude giving advice about _all of science_.** 
 Obviously, I have no idea if these ideas transfer to other fields. 
 But I would guess so! 

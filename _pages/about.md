@@ -26,6 +26,6 @@ My research combines machine learning with symbolic reasoning, or “_Neurosymbo
 Currently, I am particularly interested in methods for Neurosymbolic Learning in Generative AI models like LLMs and Diffusion Models. 
 Another focus is the accessibility of Neurosymbolic Learning, to which end I lead the development of the [ULLER](https://arxiv.org/abs/2405.00532) Python library
 
-I am also interested in Personal Knowledge Management and developed [Juggl](https://juggl.io/), a plugin for Obsidian.md that adds a customizable graph view. Other plugins include [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links). I also composed some music: [You can listen to some songs here](http://emilevankrieken.bandcamp.com/).
+I also like personal knowledge management and developed [Juggl](https://juggl.io/), a plugin for Obsidian.md that adds a customizable graph view. Other plugins include [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links). I wrote an overview of my Obsidian workflow [here](https://www.emilevankrieken.com/blog/2025/academic-obsidian/). I also composed some music for Minecraft mods: [You can listen to some songs here](http://emilevankrieken.bandcamp.com/).
 
 
