@@ -136,3 +136,15 @@ Here are some other plugins I played with that are good, but did not end up bein
 - [PDF++ plugin](https://github.com/RyotaUshio/obsidian-pdf-plus): Many people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. 
 
 Oh, about LLM plugins: I don't use them. I might integrate one if there's one that can understand the hierarchical structure of my notes via some RAG system, but right now it's not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes is to write them in your own words and understanding, and to go back and view what **you** understood about it, not an LLM. (I am not an LLM hater at all, I use them all the time for QA, coding and assisted writing, just never in Obsidian.)
+
+## Hotkeys
+Some important hotkeys that come pre-installed with the [template](https://github.com/HEmile/academic-obsidian):
+- `cmd + O`: Open quick switcher
+- `cmd + control + O`: Open omnisearch
+- `cmd + P`: Open command palette
+- `control + option + shift + I`: Create paper note from clipboard containing bibtex
+- `cmd + R`: Insert template
+- `control + O`: Navigate backward
+- `control + I`: Navigate forward
+- `cmd + J`: Hide/show left sidebar
+- `cmd + K`: Hide/show right sidebar
