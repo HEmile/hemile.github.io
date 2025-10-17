@@ -11,16 +11,15 @@ I am a big of [Obsidian](https://obsidian.md/).
 This used to be some niche tool five years ago, but now it seems like every new PhD student comes in with Obsidian installed. 
 And for good reason! It is an extremely powerful tool for managing your academic knowledge work. 
 I've been using Obsidian since 2020 (COVID...) and have optimised my workflow over many years. I also developed and contributed to [several](https://github.com/HEmile/juggl) [popular](https://github.com/mdelobelle/obsidian_supercharged_links) [plugins](https://github.com/SkepticMystic/breadcrumbs) in the meantime!
-Many colleagues asked me about my Obsidian vault, so finally got around to writing about it. 
+As many colleagues asked me about my Obsidian setup, I finally got around to writing about it. 
 
-First, I realise there are many blogs and posts about how to use Obsidian. 
-Many of them are good, but honestly, my setup is not based on any popular system like Zettlekasten-based note-taking or some template from a popular Youtuber. 
-I have no financial interest in promoting my way of using Obsidian, I am just happy to share it! 
-Furthermore, my setup is battle-tested. 
-My vault has **2000+ papers** across **1000+ topics**. 
-My vault is centered on optimising for retrieval, and every day I exploit the database I built over my career. 
+There are many blogs and videos about how to use Obsidian. 
+Many of them are good, but I could not link to one to explain my system as it is not based on any popular system like Zettlekasten-based note-taking or an existing template. 
+However, my setup is battle-tested in real-world academic use. 
+I added **2000+ papers** across **1000+ topics** (and growing!) to my vault. 
+The vault is centered on optimising for retrieval, and every day I exploit the knowledge graph I built over my career. 
 Furthermore, my setup is technically quite minimal, and instead is centred around structuring your notes for effective academic work. 
-In practice, only 3 community plugins are central!
+In practice, only 2 community plugins are important!
 
 <img src="/assets/img/obsidian-screenshot.png" alt="Obsidian screenshot" style="width:100%; height:auto;" />
 
@@ -65,7 +64,8 @@ Then, you can see a whole bunch of metadata ([Properties](https://help.obsidian.
 
 After that comes the main note. In this example, I summarise the paper, linking to relevant concepts discussed in the meanwhile. I also often give my opinion of the paper for future reference. 
 
-This might sound like a lot of work to manage for each paper, but plugins like [Templater](https://github.com/SilentVoid13/Templater) and, in particular, [the citations plugin](https://github.com/hans/obsidian-citation-plugin) make this seamless. I will explain below how I set those up. 
+This might sound like a lot of work to manage for each paper, but plugins like [Templater](https://github.com/SilentVoid13/Templater) and, in particular, [the citations plugin](https://github.com/hans/obsidian-citation-plugin) make this seamless. I will explain in the Plugins section below how I set those up. 
+
 
 
 ## Topic notes (orange)
@@ -95,16 +95,12 @@ Such notes also have the `hasTopic` typed link as usual, and I use a lot of `ali
 
 For ideas, I also have a `score` property to rank them in 1-5 (I rerank them every year or so when I have to decide on master thesis topics). And another for the `size` of the idea. 
 
-# Technicalities and tips
-The setup for most of the above is out of the box, but I would like to provide a few more tips and plugins to improve your workflow. 
-
-
-## Plugins
+# Plugins
 Plugins in Obsidian are oft-discussed, with some people using 100+ plugins and chasing the latest cool features. 
 I... somewhat used to be one of these people, but at this point core Obsidian is progressed so far that you rarely need them for the majority of common workflows. 
 I will next discuss some plugins I use on a daily basis, and a few optional ones that might suit your workflow. 
 
-### [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links)
+## [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links)
 This is my favourite plugin - but I also contributed heavily to it, so I might be a bit biased. 
 You might have noticed from my examples that links have different colours depending on the type of note they are. 
 This is because of this plugin! 
@@ -114,21 +110,21 @@ So when I search for something specific, I can open the quick switcher and visua
 In addition, I programmed a few extras for this vault, such as that paper notes automatically indicate the year of publication and the venue they were published in. And for ideas, it shows the score I assign to it. 
 Setting this up is not hard, but requires a bit of tweaking with CSS. I would suggest to start with the [template](https://github.com/HEmile/academic-obsidian) and work from there. 
 
-### [Citations](https://github.com/hans/obsidian-citation-plugin)
+## [Citations](https://github.com/hans/obsidian-citation-plugin)
 The citations plugins are known for their integration with Zotero or bibtex files. 
 That is what I also used... But honestly, it was too slow. Waiting for Zotero to import a file took too long, and so did syncing that with Obsidian. 
 
 Instead, I use a custom-built version of this plugin available [here](https://github.com/HEmile/academic-obsidian/tree/main/.obsidian/plugins/obsidian-citation-plugin). This adds a new command and hotkey to **directly create a paper note from a bibtex entry on your clipboard**. 
 Then, I just find a bibtex entry online, copy it, hit the hotkey, and voila! This automatically adds the year, authors and citekey. 
 
-### Other useful plugins
+## Other useful plugins
 - Templater: Just a must-have plugin. I use it more extensively for my personal vault, but here it's still very useful for automatically adding timestamps to my notes and getting cursors on the right place. 
 - Extended MathJax: Allows you to add a preamble for your latex. I use this a lot for eg boldfaced math. 
-- Omnisearch: A replacement for the built-in search. It's blazing fast and clear. 
+- Omnisearch: A replacement for the built-in search. It's blazing fast and clear, and works on PDFs. 
 - Pane relief: This is such a staple for me that I always forget what it does unless I turn it off and get super frustrated. Try it out!
 - Paste URL into selection: Simple, select some text, insert a link to it by pasting.
 
-### Optional
+## Optional plugins
 Here are some other plugins I played with that are good, but did not end up being core to my workflow. If there is one I would recommend out of these, it is Breadcrumbs... Please read on. 
 - (Core) You'll need some way to sync and backup your vault. I just use [Obsidian Sync](https://help.obsidian.md/sync). It has never failed me.
 - (Core) Bases: This is a new feature to create database-like views from your notes. I haven't played around with it enough to see if it'll stick, but it sure is well-built! However, many people seem to rely on it. The setup I described above actually barely relies on it - The core navigation and search is really based on the graph structure (ie, navigating links in notes and navigating backlinks). Therefore, I only end up using database-like views for specific use cases like reranking ideas. 
@@ -137,5 +133,6 @@ Here are some other plugins I played with that are good, but did not end up bein
 - (Core) VIM support: I love VIM. If you like VIM as well, activate it. The VimRC plugin is a great complement. 
 - [Breadcrumbs plugin](https://github.com/SkepticMystic/breadcrumbs): This plugin is **insane**. It allows for truly navigating your notes as a graph (more specifically, a DAG). Why is this useful in this setup? Well, let's say you want to find all papers about the topic `Artificial Intelligence`. Currently, you could navigate to that note, and find the backlinks to it. But, then you would be missing papers that link to the subtopic `Neurosymbolic Artificial Intelligence` but not to `Artificial Intelligence`. With Breadcrumbs, you can actually hierarchically navigate through your vault, and also find the papers about `Neurosymbolic Artificial Intelligence` within a single list. Really really powerful. In practice, I end up not using it as frequently as I thought I would. However, every now and then you _really_ need it, and then you'll seriously appreciate it. 
 - [Juggl plugin](https://github.com/HEmile/juggl): This is an advanced graph view plugin I developed. You might expect me to use this a lot... But honestly, it was just too slow and clunky for daily use. Fun to play around with, and it might work for you, but I wouldn't necessarily recommend it. 
+- [PDF++ plugin](https://github.com/RyotaUshio/obsidian-pdf-plus): Many people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. 
 
 Oh, about LLM plugins: I don't use them. I might integrate one if there's one that can understand the hierarchical structure of my notes via some RAG system, but right now it's not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes is to write them in your own words and understanding, and to go back and view what **you** understood about it, not an LLM. (I am not an LLM hater at all, I use them all the time for QA, coding and assisted writing, just never in Obsidian.)
