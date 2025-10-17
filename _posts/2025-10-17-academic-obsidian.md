@@ -114,7 +114,7 @@ Setting this up is not hard, but requires a bit of tweaking with CSS. I would su
 The citations plugins are known for their integration with Zotero or bibtex files. 
 That is what I also used... But honestly, it was too slow. Waiting for Zotero to import a file took too long, and so did syncing that with Obsidian. 
 
-Instead, I use a custom-built version of this plugin available [here](https://github.com/HEmile/academic-obsidian/tree/main/.obsidian/plugins/obsidian-citation-plugin). This adds a new command and hotkey to **directly create a paper note from a bibtex entry on your clipboard**. 
+Instead, I use a custom-built version of this plugin available [here](https://github.com/HEmile/academic-obsidian/tree/main/.obsidian/plugins/obsidian-citation-plugin), which is preinstalled in the [template](https://github.com/HEmile/academic-obsidian). This adds a new command and hotkey to **directly create a paper note from a bibtex entry on your clipboard**. 
 Then, I just find a bibtex entry online, copy it, hit the hotkey, and voila! This automatically adds the year, authors and citekey. 
 
 ## Other useful plugins
