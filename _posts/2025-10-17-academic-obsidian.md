@@ -20,8 +20,9 @@ Each of these systems have great ideas but are too... bloated, rigid, or abstrac
 My setup is as simple as it could practically be while achieving a clear goal, namely to keep track of academic literature and ideas. 
 
 I would say it is **battle-tested** in real-world academic use to such a degree (5+ years of succesful use) that I am happy to share it. 
-I added **2000+ papers** across **1000+ hierarchical topics** (and growing!) to my vault, and collected 150 ideas for new projects. 
+I added **2100 papers** across **900 hierarchical topics** discussing **1600 concepts** to my vault, and collected 150 ideas for new projects. 
 The vault is centered on making it easy to retrieve information, and every day I exploit my vault for finding relevant literature, new ideas, connections between concepts and people, and so much more. 
+I still frequently use notes created many years ago. 
 Furthermore, my setup is technically quite minimal, and instead centred around structuring connections between notes for effective academic work. 
 In practice, only 2 community plugins are important!
 
@@ -98,8 +99,14 @@ Also, don't forget to add tonnes of `aliases`.
 <img src="/assets/img/concept-example.png" alt="Concept note" style="width:70%; height:auto;" />
 
 
-Concept notes describe and define concepts. I use an exorbitant number of `aliases`, as you can see in this example: A monotone function, for example, can be monotone because it is increasing or decreasing. It is really not needed to make separate concepts for those, as these concepts are highly related and should be grouped together. 
+Concept notes describe and define concepts. 
+A typical workflow is when I read a paper that discusses a new concept, I create a new note for that concept so I can refer to it in other notes. 
+This also allows me to make connections between papers that discuss some concept from different perspectives. 
+
+I use an exorbitant number of `aliases`, as you can see in this example: A monotone function, for example, can be monotone because it is increasing or decreasing. It is really not needed to make separate concepts for those, as these concepts are highly related and should be grouped together. 
 I mainly use two types of typed links: `hasTopic` indicates the field of study that this concept is relevant for, and `isA` provides a hierarchy of concepts. In this example, monotonicity is studied within mathematics, and a monotone function is a particular type of function. 
+
+
 
 ## Project notes (red)
 <img src="/assets/img/project-example.png" alt="Project note" style="width:70%; height:auto;" />
@@ -184,6 +191,7 @@ Some important hotkeys that come pre-installed with the [template](https://githu
 Some other types of notes I use that are mostly quite similar to the four ones described above. 
 Maybe for your workflow, these could inspire which ones to add. 
 In general, I would suggest a note type (ie, tags) to be for categories (e.g. a human, a paper, a talk, a concept, a tool), but not about something specific like a field of study (about biology, about mathematics, about life, etc). 
+If you're a botanist, a `#plant` tag is probably a good idea. 
 - `#source/dataset`: Notes about datasets and benchmarks. 
 - `#method`: Within AI, we often compare specific methods at their performance. Many papers introduce a method. I find it is unnecessary to have separate notes for the paper and the method it introduces. So this is a type I actually rarely use, and only for very established methods. Instead, I usually add the method name as an alias. 
 - `#method/tool` and `#method/library`: Notes about tools and libraries that can be used in academic research.
@@ -193,20 +201,28 @@ In general, I would suggest a note type (ie, tags) to be for categories (e.g. a 
 
 ## Question - Answers
 Anything else? You know where to find me. I hope. 
+- **Do you recommend I just use this template as is?** 
+My recommendation is that you start off with some structure in your notes, even if it's different from that described here. 
+A common refrain in the Obsidian community is to 'just write notes' and add extras later. 
+I agree with that comment if it's about adding unnecessary plugins and features, but thinking up-front about the structure of your vault will pay off. 
+It is significantly easier to restructure an already structured vault, than to introduce structure to a bunch of notes without structure. 
 - **How about todo management?** I tried it, way too cumbersome. I just use something stupid like Microsoft To-Do now. Keeping todos within project notes for specific detail tasks or reading lists can be useful though. 
 - **How about meeting notes?** I find doing this in Obsidian is actually often not that useful. Meeting notes are very temporary, and can 'dilute' your vault as they only stay relevant for a few weeks. And they're most useful when shared with others. Obsidian is single-user and sharing markdown files around is just... Annoying? If anything, I sometimes put some action items in my project notes, depending to the degree of communication and infrastructure of the project. 
 - **What do you think about \<latest plugin X\>?** I've stopped following the latest plugins as I do not currently have any real pain points in my Obsidian setup. Well, there is one: I don't have enough time to build and maintain my notes because academic life is so hectic. But I'm afraid no plugin is going to fix that.
-- **How about things that are not work?** Oh boy, I could write a whole another blog post about this. I also have a very nice setup, quite similar in spirit to this one. But unfortunately, the main issue is the one described above. 
+- **How about things that are not academic work?** I could write a whole another blog post about this. I also have a very nice setup, quite similar in spirit to this one. But its main issue is in the previous answer. 
 - **Not even LLM plugins??? I thought you worked on AI?** Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words, and to go back and view [what **you** understood about it](https://stephango.com/understand). (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.) 
 - **What is your folder structure?** I only use tags to indicate note types. I do not use any folder structure, all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
 - **Do you have index notes / maps of content?** Nope, not worth the maintenance time imo. Going through backlinks and simple search is sufficient for retrieval. 
 - **Should I create a separate note for concept or topic X? Or put it as part of note Y?** 
-Look, I don't have any real guidelines here, not even for myself. It's just gut instinct at this point. If I think a note gets too bloated, I sometimes split it up. But I also don't want all kinds of mini notes about the most niche concepts. 
-Most importantly, **don't overthink this**. 
-Merging and splitting notes in a structured vault is pretty fast, you just go through the backlinks and update some links. 
-It's much more important to write notes than to have the perfect structure.  
+I don't have any real guidelines here; it's just gut instinct at this point. If I think a note gets too bloated, I sometimes split it up. But I also don't want all kinds of mini notes about the most niche concepts. 
+Most importantly, **don't overthink this**: 
+Merging and splitting notes when you already have a structured vault is pretty fast, you just go through the backlinks and update some links. 
+- **How long should my notes be?** 
+This is definitely something you'll develop over time. 
+In practice, the majority of my notes are very short, maybe containing a few sentences and a nice figure from a paper. The main goal is to index it in the vault via typed links. 
+But I describe other papers and concepts with a lot of detail and can be many pages long. Usually it just depends on how relevant it is to my current work. 
 - **Do you have a 'note maintenance' / evergreen note strategy?**
-Yes, but it's extremely simple: If I am writing new notes and linking, and then finding a mistake or outdated views in a related note, I update it. But I don't go out of my way to do this. 
+Yes, but it's simple: If I am writing new notes and linking, and then finding a mistake or outdated views in a related note, I update it. But I don't go out of my way to do this. 
 - **How do you manage your attachments?** I don't, I just put them all in the `files` folder. All my attachments are images I paste into notes. I'm too scared to look into the `files` folder, truth be told.  
 - **Do you clip sources or save pdfs?** Nope, too much overhead. 
 - **Oh not another AI dude giving advice about _all of science_.** 
@@ -214,4 +230,4 @@ Obviously, I have no idea if these ideas transfer to other fields.
 But I would guess so! 
 You might need to add a few more note types that are relevant to your research (e.g., particular types of proteins or plants, or years, or historical periods, etc etc.). 
 In my personal vault, I actually have _way_ more note types and it works just fine. But the idea of structured typed links just comes from knowledge graphs, and those are also applied in biomedical sciences, digital humanities, social sciences, etc. 
-- **That example vault is cool and all but very empty. Can you share your actual vault instead?** No, sorry. Those notes are... A bit unfiltered, if you know what I mean :). And honestly, they are part of my academic human capital!
+- **That [example vault](https://github.com/HEmile/academic-obsidian) is cool and all but very empty. Can you share your actual vault instead?** No, sorry. Those notes are... A bit unfiltered, if you know what I mean :). I don't have time to make it presentable. And honestly, my vault is part of my academic human capital!
