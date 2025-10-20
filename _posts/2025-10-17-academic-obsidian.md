@@ -24,7 +24,7 @@ I added **2100 papers** across **900 hierarchical topics** discussing **1600 con
 The vault is centered on making it easy to retrieve information, and every day I exploit my vault for finding relevant literature, new ideas, connections between concepts and people, and so much more. 
 I still frequently use notes created many years ago. 
 Furthermore, my setup is technically quite minimal, and instead centred around structuring connections between notes for effective academic work. 
-In practice, only 2 community plugins are important!
+In practice, only 3 community plugins are important!
 
 <img src="/assets/img/obsidian-screenshot.png" alt="Obsidian screenshot" style="width:100%; height:auto;" />
 
@@ -63,9 +63,9 @@ Next, I'll go in more detail for each type of note and how I link them together.
 You might notice each note type has a colour associated with it. I'll explain how this works in the Plugins section below. 
 
 ## Paper notes (blue)
-<img src="/assets/img/paper-example.png" alt="Paper note" style="width:60%; height:auto;" />
+<img src="/assets/img/paper-example.png" alt="Paper note" style="width:90%; height:auto;" />
 
-Here is an example of a note about a paper (of mine). 
+Here is an example of a note about a paper of mine. 
 The title of the note is always just the title of the paper (I do the same for talks). 
 Then, you can see a whole bunch of metadata ([Properties](https://help.obsidian.md/properties)). 
 - `aliases`: [Aliases](https://help.obsidian.md/aliases) is probably the **most underused but powerful feature** in core Obsidian. 
@@ -73,7 +73,7 @@ They allow you to create multiple names for a note.
 That is specifically very useful because when you are writing a note and want to link to some concept, you can open brackets with `[[`, and aliases will come up as suggestions in case you use a different spelling, a related term, or a synonym. 
 Aliases also allow you to group together related concepts into a single note, such as when a paper introduces a new concept or method. 
 Finally, Obsidian can show unlinked mentions of aliases among the backlinks to improve the linking between notes. 
-- `hasTopic`: This is the first example of a **typed link** between notes, where the link type `hasTopic` provides additional semantic information about the link. It is the most important property for discoverability. I often have practically empty paper notes with just this field filled in so that it is indexed and easy to find. Note that you can include multiple topics in this field! 
+- `hasTopic`: This is the first example of a **typed link** between notes, where the link type `hasTopic` provides additional semantic information about the link. It is the most important property for discoverability. I often have practically empty paper notes with just this field filled in so that it is indexed and easy to find and navigate to. Note that you can (and should) include multiple topics in this field! 
 - `author`: A typed link to author notes, indicating they authored the paper. Author notes are just notes with the tag `#author` and where they work. This may seem like hassle at first, but having author notes is surprisingly useful for networking! Whenever I am (re)meeting someone, I check which of their papers I read and what I liked about them. 
 This can also inspire useful new ideas for collaborations. 
 I also use author notes to track where and when I met someone to reduce the amount of instances of "where did I know you from...". 
@@ -92,7 +92,7 @@ For example, the topic of reasoning shortcuts studies a specific problem within 
 Identifiability is actually a concept note, so I am not that strict about the function of each type of note and do whatever is fast and works best.
 
 
-When you use `hasTopic` from papers and talks to topic notes, they will appear automatically in the backlinks of the topic notes! 
+When you use `hasTopic` from papers and talks to topic notes, they automatically appear in the backlinks of the topic notes, and also in the navigator on the left!
 Also, don't forget to add tonnes of `aliases`. 
 
 ## Concept notes (green)
@@ -105,6 +105,7 @@ This also allows me to make connections between papers that discuss some concept
 
 I use an exorbitant number of `aliases`, as you can see in this example: A monotone function, for example, can be monotone because it is increasing or decreasing. It is really not needed to make separate concepts for those, as these concepts are highly related and should be grouped together. 
 I mainly use two types of typed links: `hasTopic` indicates the field of study that this concept is relevant for, and `isA` provides a hierarchy of concepts. In this example, monotonicity is studied within mathematics, and a monotone function is a particular type of function. 
+Both `hasTopic` and `isA` will allow the note to appear in the navigator under the relevant topics. 
 
 
 
@@ -123,11 +124,27 @@ The rest of the post is going to be some random collection of plugins, hotkeys, 
 
 
 ## Plugins
-I frequently see people online using 100+ plugins and chasing the latest cool features. 
-Honestly, I... used to be one of these people, but at this point core Obsidian is progressed so far that I rarely need them for the majority of common workflows. 
+I frequently see people online using dozens of plugins and chasing the latest cool features. 
+However, at this point core Obsidian is progressed so far that I do not need many for the majority of common workflows. 
 I would recommend only adding a new community plugin if you have a specific pain point that is not solved by core Obsidian. 
 
 I will first discuss the plugins I use on a daily basis, and then a few optional ones that might suit your workflow. 
+
+### [My fork of Notebook Navigator](https://github.com/HEmile/notebook-navigator)
+[Notebook navigator](https://notebooknavigator.com/) is my most recent addition. 
+It is an excellent and well-designed new plugin that replaces the file browser, search, bookmarks and tag panel for an Evernote-style layout. 
+However, it is not compatible with the setup described above, as the navigator is based on folders or tags rather than typed links. 
+Therefore, I [forked](https://github.com/HEmile/notebook-navigator) it and made it compatible with my typed-links centric structure. 
+It comes preinstalled in the [template](https://github.com/HEmile/academic-obsidian), so I would suggest giving it a go there!
+
+This fork instantiates the hierarchy of topics, and recursively adds notes with that topic (or that use `isA`) to the navigator. 
+You can navigate it just like with tags, giving an immediate overview of the structure of your vault and the connections between your notes. 
+When is this useful? 
+Well, let's say you want to find all papers about the topic `Artificial Intelligence`. 
+Without the navigator, you could navigate to the topic note `Artificial Intelligence`, and find its backlinks. 
+But then you would be missing papers that link to the subtopic `Neurosymbolic Artificial Intelligence` but not to `Artificial Intelligence`. 
+In the notebook navigator, you can hierarchically navigate through your vault, and find the papers about `Neurosymbolic Artificial Intelligence` together with other `Artificial Intelligence` papers within a single list!
+
 
 ### [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links)
 This is my favourite plugin - but I also contributed heavily to it, so I might be a bit biased. 
@@ -151,24 +168,23 @@ This automatically adds the year, authors and citekey:
 {% include video.liquid path="assets/video/citations-plugin.mp4" class="img-fluid rounded z-depth-1" controls=true width="80%" %}
 
 ### Other really useful plugins
-These come pre-installed with the [template](https://github.com/HEmile/academic-obsidian). I use them every day, but are not quite core to the setup. 
-- **Templater**: Just a must-have plugin. I use it more extensively for my personal vault, but here it's still very useful for automatically adding timestamps to my notes and getting cursors on the right place. 
+These come pre-installed with the [template](https://github.com/HEmile/academic-obsidian). I use them every day, but are not necessary for the setup. 
+- **Templater**: I use it more extensively for my personal vault, but it's always a very useful extension to [the templates feature in Obsidian](https://help.obsidian.md/plugins/templates) for automatically adding timestamps to my notes and getting cursors on the right place. 
 - **Extended MathJax**: Add a preamble for your latex equations. I use this a lot for eg boldfaced math. Only important if you're in a math-heavy field. 
 - **Omnisearch**: A replacement for the built-in search. It's blazing fast and clear, and works on PDFs. 
 - **Pane relief**: This is such a staple for me that I always forget what it does unless I turn it off and get super frustrated. I hope that's enough of a recommendation.
 - **Paste URL into selection**: Simple, select some text, insert a link to it by pasting.
 
 ### Optional plugins
-Here are some other plugins I played with that are good, but are not core to the workflow. 
-If there is one to particularly go full rabbit-hole on, it is Breadcrumbs. 
+Here are some other plugins I played with that are good, but are not core to the workflow.  
 Please read on. 
 - (Core) You'll need some way to sync and backup your vault. I just use **[Obsidian Sync](https://help.obsidian.md/sync)**. It has never failed me.
 - (Core) **Bases**: This is a new feature to create database-like views from your notes. I haven't played around with it enough to see if it'll stick, but it sure is well-built! However, many people seem to rely on it. The setup I described above actually barely relies on it - The core navigation and search is really based on the graph structure (ie, navigating links in notes and navigating backlinks). Therefore, I only end up using database-like views for specific use cases like reranking ideas. 
 - (Core) **Canvas, Graph view**: Honestly, these are fun to play with, but I never use them. GUI-based things are just too slow compared to plain text and keyboard shortcuts. 
 - (Core) **VIM** support: I love VIM. If you like VIM as well, activate it. The VimRC plugin is a great complement. 
-- **[Breadcrumbs plugin](https://github.com/SkepticMystic/breadcrumbs)**: This plugin is **insane**. It allows for truly navigating your notes as a graph (more specifically, a DAG). Why is this useful in this setup? Well, let's say you want to find all papers about the topic `Artificial Intelligence`. Currently, you could navigate to that note, and find the backlinks to it. But, then you would be missing papers that link to the subtopic `Neurosymbolic Artificial Intelligence` but not to `Artificial Intelligence`. With Breadcrumbs, you can actually hierarchically navigate through your vault, and also find the papers about `Neurosymbolic Artificial Intelligence` within a single list. Really really powerful. In practice, I end up not using it as frequently as I thought I would. However, every now and then you _really_ need it, and then you'll seriously appreciate it. 
-- **[Juggl plugin](https://github.com/HEmile/juggl)**: This is an advanced graph view plugin I developed. Therefore, you might expect me to use this. But honestly, it was just too slow and clunky for daily use. Fun to play around with, and it might work for you, but I wouldn't necessarily recommend it. 
-- **[PDF++ plugin](https://github.com/RyotaUshio/obsidian-pdf-plus)**: Many people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. 
+- **[Breadcrumbs](https://github.com/SkepticMystic/breadcrumbs)**: This plugin is the first major plugin for navigating your notes as a graph (more specifically, a DAG). This was pretty useful for my setup. However, the UI is nowhere near as user friendly and fast as Notebook Navigator, so I don't use it anymore.
+- **[Juggl](https://github.com/HEmile/juggl)**: This is an advanced graph view plugin I developed. Therefore, you might expect me to use this. But honestly, it was just too slow and clunky for daily use. Fun to play around with, and it might work for you, but I wouldn't necessarily recommend it. 
+- **[PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus)**: Many people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. 
 
 
 
@@ -184,6 +200,8 @@ Some important hotkeys that come pre-installed with the [template](https://githu
 - `control + I`: Navigate forward
 - `cmd + J`: Hide/show left sidebar
 - `cmd + K`: Hide/show right sidebar
+- `cmd + shift + J`: Open and focus Notebook Navigator
+- `cmd + D`: Reveal current note in Notebook Navigator's topic graph
 - `cmd + T`: Open new tab
 - `cmd + W`: Close current tab
 
@@ -208,7 +226,7 @@ I agree with that comment if it's about adding unnecessary plugins and features,
 It is significantly easier to restructure an already structured vault, than to introduce structure to a bunch of notes without structure. 
 - **How about todo management?** I tried it, way too cumbersome. I just use something stupid like Microsoft To-Do now. Keeping todos within project notes for specific detail tasks or reading lists can be useful though. 
 - **How about meeting notes?** I find doing this in Obsidian is actually often not that useful. Meeting notes are very temporary, and can 'dilute' your vault as they only stay relevant for a few weeks. And they're most useful when shared with others. Obsidian is single-user and sharing markdown files around is just... Annoying? If anything, I sometimes put some action items in my project notes, depending to the degree of communication and infrastructure of the project. 
-- **What do you think about \<latest plugin X\>?** I've stopped following the latest plugins as I do not currently have any real pain points in my Obsidian setup. Well, there is one: I don't have enough time to build and maintain my notes because academic life is so hectic. But I'm afraid no plugin is going to fix that.
+- **What do you think about \<latest plugin X\>?** I do not closely follow all the latest plugins as I do not currently have any real pain points in my Obsidian setup. Well, there is one: I don't have enough time to build and maintain my notes because academic life is so hectic. But I'm afraid no plugin is going to fix that.
 - **How about things that are not academic work?** I could write a whole another blog post about this. I also have a very nice setup, quite similar in spirit to this one. But its main issue is in the previous answer. 
 - **Not even LLM plugins??? I thought you worked on AI?** Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words, and to go back and view [what **you** understood about it](https://stephango.com/understand). (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.) 
 - **What is your folder structure?** I only use tags to indicate note types. I do not use any folder structure, all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
@@ -230,4 +248,5 @@ Obviously, I have no idea if these ideas transfer to other fields.
 But I would guess so! 
 You might need to add a few more note types that are relevant to your research (e.g., particular types of proteins or plants, or years, or historical periods, etc etc.). 
 In my personal vault, I actually have _way_ more note types and it works just fine. But the idea of structured typed links just comes from knowledge graphs, and those are also applied in biomedical sciences, digital humanities, social sciences, etc. 
-- **That [example vault](https://github.com/HEmile/academic-obsidian) is cool and all but very empty. Can you share your actual vault instead?** No, sorry. Those notes are... A bit unfiltered, if you know what I mean :). I don't have time to make it presentable. And honestly, my vault is part of my academic human capital!
+- **That [example vault](https://github.com/HEmile/academic-obsidian) is cool and all but very empty. Can you share your actual vault instead?** No, sorry. Those notes are... A bit unfiltered, if you know what I mean :). I don't have time to make it presentable. And honestly, my vault is part of my academic human capital! But here is a screenshot:
+<img src="/assets/img/own-vault-example.png" alt="Vault screenshot" style="width:100%; height:auto;" />
