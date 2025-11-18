@@ -87,13 +87,16 @@ This might sound like a lot of work to manage for each paper, but plugins like [
 ## Topic notes (orange)
 <img src="/assets/img/topic-example.png" alt="Topic note" style="width:89%; height:auto;" />
 
-Most of my topic notes are very simple, containing at best a few sentences to describe and define the topic, preventing confusion with other topics. The most important typed link for topic notes is `subset`, which creates a [taxonomy](https://en.wikipedia.org/wiki/Taxonomy) of topics (to be more precise, a [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)). 
-For example, the topic of reasoning shortcuts studies a specific problem within neurosymbolic learning. And this problem relates to identifiability. 
-Identifiability is actually a concept note, so I am not that strict about the function of each type of note and do whatever is fast and works best.
+Most of my topic notes are very simple, containing at best a few sentences to describe and define the topic, preventing confusion with other topics. If you are familiar with 
+hierarchical tags in Obsidian, a topic note is a note that sort of 'reperesents' a tag, except you can also add information about the topic.
+
+The most important typed link for topic notes is `subset`, which creates a [hierarchy](https://en.wikipedia.org/wiki/Taxonomy) of topics (precisely, a [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)). Topic notes that are not subsets of other topic notes are the roots of the taxonomy and appear at the top level of the navigator.
+
+For example, the topic of "reasoning shortcuts" studies a specific problem within neurosymbolic learning. And this problem relates to identifiability. And the topic of "artificial intelligence" is a root topic that contains many subtopics like "machine learning", "planning", "symbolic AI", etc.
+<!-- Identifiability is actually a concept note, so I am not that strict about the function of each type of note and do whatever is fast and works best. -->
 
 
-When you use `hasTopic` from papers and talks to topic notes, they automatically appear in the backlinks of the topic notes, and also in the navigator on the left!
-Also, don't forget to add tonnes of `aliases`. 
+When you use `hasTopic` from papers and talks to link to topic notes, they automatically appear in the backlinks of the topic notes, and in the navigator on the left! Read below for other tips on how to use the notebook navigator to find notes related to a particular topic.
 
 ## Concept notes (green)
 <img src="/assets/img/concept-example.png" alt="Concept note" style="width:70%; height:auto;" />
