@@ -49,16 +49,19 @@ Let's start with the main types, which I indicate using tags.
 
 I will introduce other types of notes as we go along. 
 
-The central point of the vault is to **link maximally** between notes. This greatly increases the discoverability of your notes. 
+To increase the discoverability of the notes in your vault, you should **link maximally** between notes. 
 So, seriously: For every paper you read and want to refer in your notes, create a note and link to it. 
 For every concept you want to discuss, make sure to put it in brackets, even if you haven't created that note yet. 
 Link everything! 
 
-Linking greatly pays off because you can use [Backlinks](https://help.obsidian.md/plugins/backlinks) and [Notebook Navigator](https://github.com/HEmile/notebook-navigator) to (re)discover related notes and connections between your ideas and understanding. 
+(Typed) linking greatly pays off because you can use [Backlinks](https://help.obsidian.md/plugins/backlinks) and [Notebook Navigator](https://github.com/HEmile/notebook-navigator) to (re)discover related notes and connections between your ideas and understanding. 
 
 # Types of notes
-Next, I'll go in more detail for each type of note and how I link them together. For each, I will provide an example from the [template on Github](https://github.com/HEmile/academic-obsidian). Creating each type of note is easy: Use `cmd + R` to open the [template modal](https://help.obsidian.md/plugins/templates), choose the note type, and hit enter.
-You might notice each note type has a colour associated with it. I'll explain how this works in the Plugins section below. 
+Next, I'll go in more detail for each type of note and how I link them together. 
+For each, I will provide an example from the [template on Github](https://github.com/HEmile/academic-obsidian). 
+Creating each type of note is easy: Use `cmd + R` to open the [template modal](https://help.obsidian.md/plugins/templates), choose the note type, and hit enter.
+You might notice each note type has a colour associated with it. 
+I'll explain how this works in the Plugins section below. 
 
 ## Paper notes (blue)
 <img src="/assets/img/paper-example.png" alt="Paper note" style="width:90%; height:auto;" />
@@ -95,9 +98,6 @@ Note that such hierarchies are not possible with folders or hierarchical tags, a
 <!-- Identifiability is actually a concept note, so I am not that strict about the function of each type of note and do whatever is fast and works best. -->
 
 <img src="/assets/pdf/typed_links.pdf" alt="Typed links" style="width:100%; height:auto;" />
-
-
-
 
 
 When you use `hasTopic` from papers and talks to link to topic notes, they automatically appear in the backlinks of the topic notes, and in the navigator on the left! Read below for other tips on how to use the notebook navigator to find notes related to a particular topic.
