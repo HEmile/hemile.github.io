@@ -54,9 +54,7 @@ So, seriously: For every paper you read and want to refer in your notes, create 
 For every concept you want to discuss, make sure to put it in brackets, even if you haven't created that note yet. 
 Link everything! 
 
-Linking greatly pays off because you can use [Backlinks](https://help.obsidian.md/plugins/backlinks) to (re)discover related notes and connections between your ideas and understanding. 
-And there are other, more advanced, retrieval features like [Breadcrumbs](https://github.com/SkepticMystic/breadcrumbs). 
-
+Linking greatly pays off because you can use [Backlinks](https://help.obsidian.md/plugins/backlinks) and [Notebook Navigator](https://github.com/HEmile/notebook-navigator) to (re)discover related notes and connections between your ideas and understanding. 
 
 # Types of notes
 Next, I'll go in more detail for each type of note and how I link them together. For each, I will provide an example from the [template on Github](https://github.com/HEmile/academic-obsidian). Creating each type of note is easy: Use `cmd + R` to open the [template modal](https://help.obsidian.md/plugins/templates), choose the note type, and hit enter.
@@ -92,8 +90,14 @@ hierarchical tags in Obsidian, a topic note is a note that sort of 'reperesents'
 
 The most important typed link for topic notes is `subset`, which creates a [hierarchy](https://en.wikipedia.org/wiki/Taxonomy) of topics (precisely, a [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)). Topic notes that are not subsets of other topic notes are the roots of the taxonomy and appear at the top level of the navigator.
 
-For example, the topic of "reasoning shortcuts" studies a specific problem within neurosymbolic learning. And this problem relates to identifiability. And the topic of "artificial intelligence" is a root topic that contains many subtopics like "machine learning", "planning", "symbolic AI", etc.
+For example, the topic of "reasoning shortcuts" studies a specific problem within neurosymbolic learning. And this problem relates to identifiability. And the topic of "artificial intelligence" is a root topic that contains many subtopics like "machine learning", "planning", "symbolic AI", etc. 
+Note that such hierarchies are not possible with folders or hierarchical tags, as shown below. You can only put notes in a single folder. And hierarchical tags are only trees, meaning you cannot create topics like "neurosymbolic AI" as a subtopic of both "symbolic AI" and "machine learning":
 <!-- Identifiability is actually a concept note, so I am not that strict about the function of each type of note and do whatever is fast and works best. -->
+
+<img src="/assets/pdf/typed_links.pdf" alt="Typed links" style="width:100%; height:auto;" />
+
+
+
 
 
 When you use `hasTopic` from papers and talks to link to topic notes, they automatically appear in the backlinks of the topic notes, and in the navigator on the left! Read below for other tips on how to use the notebook navigator to find notes related to a particular topic.
