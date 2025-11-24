@@ -192,6 +192,7 @@ Please read on.
 - **[Breadcrumbs](https://github.com/SkepticMystic/breadcrumbs)**: This plugin is the first major plugin for navigating your notes as a graph (more specifically, a DAG). This was pretty useful for my setup. However, the UI is nowhere near as user friendly and fast as Notebook Navigator, so I don't use it anymore.
 - **[Juggl](https://github.com/HEmile/juggl)**: This is an advanced graph view plugin I developed. Therefore, you might expect me to use this. But honestly, it was just too slow and clunky for daily use. Fun to play around with, and it might work for you, but I wouldn't necessarily recommend it. 
 - **[PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus)**: Many people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. 
+- **[Various Complements](https://github.com/tadashi-aikawa/obsidian-various-complements-plugin)**: Allows you to insert links without opening brackets. The plugin is a bit chaotic, and requires some configuration (make sure to enable aliases support!) but can speed up writing quite a big. 
 
 
 
