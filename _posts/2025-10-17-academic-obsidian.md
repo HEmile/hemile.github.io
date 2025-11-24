@@ -97,7 +97,7 @@ For example, the topic of "reasoning shortcuts" studies a specific problem withi
 Note that such hierarchies are not possible with folders or hierarchical tags, as shown below. You can only put notes in a single folder. And hierarchical tags are only trees, meaning you cannot create topics like "neurosymbolic AI" as a subtopic of both "symbolic AI" and "machine learning":
 <!-- Identifiability is actually a concept note, so I am not that strict about the function of each type of note and do whatever is fast and works best. -->
 
-<img src="/assets/pdf/typed_links.pdf" alt="Typed links" style="width:100%; height:auto;" />
+<img src="/assets/img/typed_links.png" alt="Typed links" style="width:100%; height:auto;" />
 
 
 When you use `hasTopic` from papers and talks to link to topic notes, they automatically appear in the backlinks of the topic notes, and in the navigator on the left! Read below for other tips on how to use the notebook navigator to find notes related to a particular topic.
