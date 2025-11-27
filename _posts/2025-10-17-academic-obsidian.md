@@ -7,7 +7,7 @@ tags: productivity
 categories: productivity
 ---
 
-I am a big of [Obsidian](https://obsidian.md/). 
+I am a big fan of [Obsidian](https://obsidian.md/). 
 This used to be some niche tool five years ago, but now it seems like every new PhD student comes in with Obsidian installed. 
 And for good reason! It is an extremely powerful tool for managing your academic knowledge work. 
 I've used Obsidian since 2020 (COVID...) and optimised my workflow to the point where I haven't had to make major changes in years. 
