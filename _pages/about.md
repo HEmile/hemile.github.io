@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: left
-  image: bnaic.jpg
+  image: bnaic.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Vrije Universiteit Amsterdam</p>

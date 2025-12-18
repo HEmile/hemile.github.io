@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on "[Neurosymbolic Diffusion Models](https://arxiv.org/abs/2505.13138)" is accepted at NeurIPS 2025! This was my main project during my Postdoc in Edinburgh. 
+Our paper on "[Neurosymbolic Diffusion Models](https://arxiv.org/abs/2505.13138)" is accepted at **NeurIPS 2025**! This was my main project during my Postdoc in Edinburgh. 
