@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Emile van Krieken",
-    "label": "Research Associate",
+    "label": "Assistant Professor of Neurosymbolic AI",
     "image": "",
-    "email": "Emile.van.Krieken@ed.ac.uk",
+    "email": "e.van.krieken@vu.nl",
     "phone": "",
     "url": "https://emilevankrieken.com/",
-    "summary": "I am a Research Associate (Postdoc) at the University of Edinburgh, working on Artificial Intelligence. My main research interest is Neurosymbolic methods for machine learning. I obtained my PhD in 2024 at the Vrije Universiteit Amsterdam with Cum Laude distinction.",
+    "summary": "I am an assistant professor working at the Vrije Universiteit Amsterdam on machine learning and artificial intelligence, with a focus on neurosymbolic machine learning. I obtained my PhD in 2024 at the Vrije Universiteit Amsterdam with cum laude distinction and won the BNVKI 2025 award. Before my current position, I worked as a Postdoc at the Vrije Universiteit and University of Edinburgh.  ",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -23,12 +23,20 @@
     ]
   },
   "work": [
+        {
+      "name": "Vrije Universiteit Amsterdam",
+      "position": "Assistant professor",
+      "url": "https://lr.cs.vu.nl/",
+      "startDate": "2026-06-01",
+      "summary": "",
+      "highlights": []
+    },
     {
       "name": "Vrije Universiteit Amsterdam",
       "position": "Postdoctoral Researcher",
       "url": "https://lr.cs.vu.nl/",
       "startDate": "2025-07-01",
-      "endDate": "2028-07-01",
+      "endDate": "2026-06-01",
       "summary": "",
       "highlights": []
     },
