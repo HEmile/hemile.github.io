@@ -2,7 +2,7 @@
 layout: page
 permalink: /team/
 title: team
-description: The PhD students I supervise, and open positions.
+description: 
 nav: true
 nav_order: 4
 ---
