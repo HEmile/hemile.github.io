@@ -8,31 +8,32 @@ categories: productivity
 ---
 
 I am a big fan of [Obsidian](https://obsidian.md/). 
-This used to be some niche tool five years ago, but now it seems like every new PhD student comes in with Obsidian installed. 
+This used to be some niche tool five years ago, but now many PhD students come in with Obsidian installed. 
 And for good reason! It is an extremely powerful tool for managing your academic knowledge work. 
-I've used Obsidian since 2020 (COVID...) and optimised my workflow to the point where I haven't had to make major changes in years. 
-But while I was figuring out my setup, I developed and contributed to [several](https://github.com/HEmile/juggl) [popular](https://github.com/mdelobelle/obsidian_supercharged_links) [plugins](https://github.com/SkepticMystic/breadcrumbs)!
+I've used Obsidian since 2020 and optimised my workflow to the point where I haven't had to make major changes in years. 
+While figuring out my setup, I developed and contributed to [several](https://github.com/HEmile/juggl) [popular](https://github.com/mdelobelle/obsidian_supercharged_links) [plugins](https://github.com/SkepticMystic/breadcrumbs)!
 As many colleagues asked me about my Obsidian setup, I decided to finally get around to writing it down. 
 
-A lot is written about how to best use Obsidian
-However, those are rarely a great starting point for how I actually work in Obsidian, as I do not base my setup on a popular personal knowledge management methodology like Zettelkasten/linking your thinking/atomic/evergreen notes/etc. 
-Each of these systems have great ideas but are too... bloated, rigid, or abstract for my taste. 
-My setup is as simple as it could practically be while achieving a clear goal, namely to keep track of academic literature and ideas. 
+A lot is written about how to best use Obsidian. 
+However, these aren't great starting point for how I work in Obsidian for academic purposes. 
+I do not base my setup on a popular personal knowledge management methodology like Zettelkasten/linking your thinking/atomic/evergreen notes/etc. 
+These systems have good ideas but are often too bloated, rigid, or abstract for my workflow. 
+My setup is as simple as it could practically be while achieving a clear goal, namely to keep track of academic literature and ideas with minimal friction. 
 
-I would say it is **battle-tested** in real-world academic use to such a degree (5+ years of succesful use) that I am happy to share it. 
+I would say it is **battle-tested** in real-world academic use to such a degree (6+ years of succesful use) that I am happy to share it. 
 I added **2100 papers** across **900 hierarchical topics** discussing **1600 concepts** to my vault, and collected 150 ideas for new projects. 
 The vault is centered on making it easy to retrieve information, and every day I exploit my vault for finding relevant literature, new ideas, connections between concepts and people, and so much more. 
 I still frequently use notes created many years ago. 
 Furthermore, my setup is technically quite minimal, and instead centred around structuring connections between notes for effective academic work. 
 In practice, only 3 community plugins are important!
 
-<img src="/assets/img/obsidian-screenshot.png" alt="Obsidian screenshot" style="width:100%; height:auto;" />
-
 In this blog post, I'll overview my workflow. 
 This post is not an introduction to the basic note-taking features of Obsidian. 
 For that, there are many good resources, in particular the [Obsidian Help vault](https://help.obsidian.md/install), but there is no need to become an expert in Obsidian before starting. 
 Finally, this setup is what works for me. You can use it as a starting point, or integrate some ideas into your own vault. 
 But play around, and see what sticks!
+
+<img src="/assets/img/obsidian-screenshot.png" alt="Obsidian screenshot" style="width:100%; height:auto;" />
 
 # The high-level overview
 I prepared a [template on Github](https://github.com/HEmile/academic-obsidian) with everything below installed and configured, and with a few example notes (sneaking in some shameless self-promotion of my work ;)). 
@@ -128,7 +129,8 @@ For ideas, I also have a `score` property to rank them in 1-5 (I rerank them eve
 
 # Technicalities and tips
 The rest of the post is going to be some random collection of plugins, hotkeys, tips, further minor explanations and answers to questions. 
-
+The lesson for this part is that you should always evaluate if you can technically improve your vault setup to minimise the friction you experience writing notes. 
+The plugins and techniques below are what work for me, but you may have other requirements. 
 
 ## Plugins
 I frequently see people online using dozens of plugins and chasing the latest cool features. 
@@ -138,8 +140,7 @@ I would recommend only adding a new community plugin if you have a specific pain
 I will first discuss the plugins I use on a daily basis, and then a few optional ones that might suit your workflow. 
 
 ### [My fork of Notebook Navigator](https://github.com/HEmile/notebook-navigator)
-[Notebook navigator](https://notebooknavigator.com/) is my most recent addition. 
-It is an excellent and well-designed new plugin that replaces the file browser, search, bookmarks and tag panel for an Evernote-style layout. 
+[Notebook navigator](https://notebooknavigator.com/) is an excellent and well-designed new plugin that replaces the file browser, search, bookmarks and tag panel for an Evernote-style layout. 
 However, it is not compatible with the setup described above, as the navigator is based on folders or tags rather than typed links. 
 Therefore, I [forked](https://github.com/HEmile/notebook-navigator) it and made it compatible with my typed-links centric structure. 
 It comes preinstalled in the [template](https://github.com/HEmile/academic-obsidian), so I would suggest giving it a go there!
@@ -175,7 +176,7 @@ This automatically adds the year, authors and citekey:
 {% include video.liquid path="assets/video/citations-plugin.mp4" class="img-fluid rounded z-depth-1" controls=true width="80%" %}
 
 ### Other really useful plugins
-These come pre-installed with the [template](https://github.com/HEmile/academic-obsidian). I use them every day, but are not necessary for the setup. 
+These also come pre-installed with the [template](https://github.com/HEmile/academic-obsidian). I use them every day, but are not necessary for the setup. 
 - **Templater**: I use it more extensively for my personal vault, but it's always a very useful extension to [the templates feature in Obsidian](https://help.obsidian.md/plugins/templates) for automatically adding timestamps to my notes and getting cursors on the right place. 
 - **Extended MathJax**: Add a preamble for your latex equations. I use this a lot for eg boldfaced math. Only important if you're in a math-heavy field. 
 - **Omnisearch**: A replacement for the built-in search. It's blazing fast and clear, and works on PDFs. 
@@ -184,15 +185,13 @@ These come pre-installed with the [template](https://github.com/HEmile/academic-
 
 ### Optional plugins
 Here are some other plugins I played with that are good, but are not core to the workflow.  
-Please read on. 
 - (Core) You'll need some way to sync and backup your vault. I just use **[Obsidian Sync](https://help.obsidian.md/sync)**. It has never failed me.
 - (Core) **Bases**: This is a new feature to create database-like views from your notes. I haven't played around with it enough to see if it'll stick, but it sure is well-built! However, many people seem to rely on it. The setup I described above actually barely relies on it - The core navigation and search is really based on the graph structure (ie, navigating links in notes and navigating backlinks). Therefore, I only end up using database-like views for specific use cases like reranking ideas. 
 - (Core) **Canvas, Graph view**: Honestly, these are fun to play with, but I never use them. GUI-based things are just too slow compared to plain text and keyboard shortcuts. 
 - (Core) **VIM** support: I love VIM. If you like VIM as well, activate it. The VimRC plugin is a great complement. 
 - **[Breadcrumbs](https://github.com/SkepticMystic/breadcrumbs)**: This plugin is the first major plugin for navigating your notes as a graph (more specifically, a DAG). This was pretty useful for my setup. However, the UI is nowhere near as user friendly and fast as Notebook Navigator, so I don't use it anymore.
-- **[Juggl](https://github.com/HEmile/juggl)**: This is an advanced graph view plugin I developed. Therefore, you might expect me to use this. But honestly, it was just too slow and clunky for daily use. Fun to play around with, and it might work for you, but I wouldn't necessarily recommend it. 
-- **[PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus)**: Many people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. 
-- **[Various Complements](https://github.com/tadashi-aikawa/obsidian-various-complements-plugin)**: Allows you to insert links without opening brackets. The plugin is a bit chaotic, and requires some configuration (make sure to enable aliases support!) but can speed up writing quite a big. 
+- **[PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus)**: Some people annotate their PDFs in Obsidian and try to link it together. I find it too cumbersome for the vast majority of papers, but this plugin really is excellent if you do prefer that workflow. Honestly, I'd recommend an e-reader for annotation. 
+<!-- - **[Various Complements](https://github.com/tadashi-aikawa/obsidian-various-complements-plugin)**: Allows you to insert links without opening brackets. The plugin is a bit chaotic, and requires some configuration (make sure to enable aliases support!) but can speed up writing quite a big.  -->
 
 
 
@@ -232,15 +231,23 @@ My recommendation is that you start off with some structure in your notes, even 
 A common refrain in the Obsidian community is to 'just write notes' and add extras later. 
 I agree with that comment if it's about adding unnecessary plugins and features, but thinking up-front about the structure of your vault will pay off. 
 It is significantly easier to restructure an already structured vault, than to introduce structure to a bunch of notes without structure. 
-- **How about todo management?** I tried it, way too cumbersome. I just use something stupid like Microsoft To-Do now. Keeping todos within project notes for specific detail tasks or reading lists can be useful though. 
-- **How about meeting notes?** I find doing this in Obsidian is actually often not that useful. Meeting notes are very temporary, and can 'dilute' your vault as they only stay relevant for a few weeks. And they're most useful when shared with others. Obsidian is single-user and sharing markdown files around is just... Annoying? If anything, I sometimes put some action items in my project notes, depending to the degree of communication and infrastructure of the project. 
-- **What do you think about \<latest plugin X\>?** I do not closely follow all the latest plugins as I do not currently have any real pain points in my Obsidian setup. Well, there is one: I don't have enough time to build and maintain my notes because academic life is so hectic. But I'm afraid no plugin is going to fix that.
+- **How about todo management?** ~~I tried it, way too cumbersome. I just use something stupid like Microsoft To-Do now. Keeping todos within project notes for specific detail tasks or reading lists can be useful though.~~ UPDATE 9-10-26: I now use TaskNotes + [Taskforge](https://taskforge.md/nl/) for this. It's okay. I'm not sure I'd necessarily recommend it but I've been sticking with it for half a year now. 
+- **How about meeting notes?** I find Obsidian is not the best place for this. 
+Meeting notes are very temporary, and can 'dilute' your vault as they only stay relevant for a few weeks. 
+And they're most useful when shared with others. 
+Obsidian is (right now) single-user and sharing markdown files around is just... 
+Annoying? 
+If anything, I sometimes put some action items in my project notes, depending to the degree of communication and infrastructure of the project. 
+- **What do you think about \<latest plugin X\>?** I do not closely follow all the latest plugins as I do not currently have real friction in my Obsidian setup. Well, there is one: I don't have enough time to build and maintain my notes because academic life is quite hectic. But I'm afraid no plugin is going to fix that.
+- **Wait, and what about [Juggl](https://github.com/HEmile/juggl)? Didn't you make it?** Juggl is an advanced graph view plugin I developed. Therefore, you might expect me to use this. But honestly, it was just too slow and clunky for daily use. I also do not support it anymore. 
 - **How about things that are not academic work?** I could write a whole another blog post about this. I also have a very nice setup, quite similar in spirit to this one. But its main issue is in the previous answer. 
-- **Not even LLM plugins??? I thought you worked on AI?** Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough. And seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words, and to go back and view [what **you** understood about it](https://stephango.com/understand). (I am not an LLM hater, I use them all the time for QA, coding and assisted writing, just never in Obsidian.) 
-- **What is your folder structure?** I only use tags to indicate note types. I do not use any folder structure, all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
+- **Not even LLM plugins??? I thought you worked on AI?** ~~Look, I don't use them. I might integrate one when it can understand the hierarchical structure of my notes via some RAG system, but right now it's just not good enough.~~ Seriously, **do not use LLMs to write your notes**. The whole point of taking notes (and learning!) is to write them in your own words, and to go back and view [what **you** understood about it](https://stephango.com/understand). 
+- **NEW 9-10-26: Not even in 2026? Agents are super smart now!** Err, yes. I now sometimes use Claude Cowork as an agent over my notes. It can only see a safe, restricted subset of my vault. It's great as a semantic search and summariser. And I sometimes let it write draft or summaries of long, content-focussed chats. But the main point above, that you should absolutely write your own notes, is still central. 
+- **What is your folder structure?** I only use tags to indicate note types. I barely use any folder, and all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
 - **Do you have index notes / maps of content?** Nope, not worth the maintenance time imo. Going through backlinks and simple search is sufficient for retrieval. 
 - **Should I create a separate note for concept or topic X? Or put it as part of note Y?** 
-I don't have any real guidelines here; it's just gut instinct at this point. If I think a note gets too bloated, I sometimes split it up. But I also don't want all kinds of mini notes about the most niche concepts. 
+I don't have any real guidelines here; it's gut instinct and iteration. 
+If I think a note gets too bloated, I sometimes split it up. But I also don't want all kinds of mini notes about the most niche concepts. 
 Most importantly, **don't overthink this**: 
 Merging and splitting notes when you already have a structured vault is pretty fast, you just go through the backlinks and update some links. 
 - **How long should my notes be?** 
@@ -251,10 +258,11 @@ But I describe other papers and concepts with a lot of detail and can be many pa
 Yes, but it's simple: If I am writing new notes and linking, and then finding a mistake or outdated views in a related note, I update it. But I don't go out of my way to do this. 
 - **How do you manage your attachments?** I don't, I just put them all in the `files` folder. All my attachments are images I paste into notes. I'm too scared to look into the `files` folder, truth be told.  
 - **Do you clip sources or save pdfs?** Nope, too much overhead. 
-- **Oh not another AI dude giving advice about _all of science_.** 
-Obviously, I have no idea if these ideas transfer to other fields. 
+- **Oh, an AI dude giving advice about _all of science_.** 
+Obviously, I have no idea if this methodology transfers to other fields. 
 But I would guess so! 
 You might need to add a few more note types that are relevant to your research (e.g., particular types of proteins or plants, or years, or historical periods, etc etc.). 
-In my personal vault, I actually have _way_ more note types and it works just fine. But the idea of structured typed links just comes from knowledge graphs, and those are also applied in biomedical sciences, digital humanities, social sciences, etc. 
+In my personal vault, I actually have _way_ more note types and it works just fine. 
+The idea of typed links comes from knowledge graphs, and those are applied across biomedical sciences, digital humanities, social sciences, etc. 
 - **That [example vault](https://github.com/HEmile/academic-obsidian) is cool and all but very empty. Can you share your actual vault instead?** No, sorry. Those notes are... A bit unfiltered, if you know what I mean :). I don't have time to make it presentable. And honestly, my vault is part of my academic human capital! But here is a screenshot:
 <img src="/assets/img/own-vault-example.png" alt="Vault screenshot" style="width:100%; height:auto;" />
