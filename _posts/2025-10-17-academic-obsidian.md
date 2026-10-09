@@ -7,6 +7,10 @@ tags: productivity
 categories: productivity
 ---
 
+{% include academic-obsidian/head.html %}
+
+{% include academic-obsidian/banner.html %}
+
 I am a big fan of [Obsidian](https://obsidian.md/). 
 This used to be some niche tool five years ago, but now many PhD students come in with Obsidian installed. 
 And for good reason! It is an extremely powerful tool for managing your academic knowledge work. 
@@ -21,32 +25,38 @@ These systems have good ideas but are often too bloated, rigid, or abstract for 
 My setup is as simple as it could practically be while achieving a clear goal, namely to keep track of academic literature and ideas with minimal friction. 
 
 I would say it is **battle-tested** in real-world academic use to such a degree (6+ years of succesful use) that I am happy to share it. 
-I added **2100 papers** across **900 hierarchical topics** discussing **1600 concepts** to my vault, and collected 150 ideas for new projects. 
+I added <b class="kg-paper">{{ site.data.academic_obsidian.papers }} papers</b> across <b class="kg-topic">{{ site.data.academic_obsidian.topics }} hierarchical topics</b> discussing <b class="kg-concept">{{ site.data.academic_obsidian.concepts }} concepts</b> to my vault, and collected <b class="kg-project">{{ site.data.academic_obsidian.ideas }} ideas</b> for new projects. 
 The vault is centered on making it easy to retrieve information, and every day I exploit my vault for finding relevant literature, new ideas, connections between concepts and people, and so much more. 
 I still frequently use notes created many years ago. 
-Furthermore, my setup is technically quite minimal, and instead centred around structuring connections between notes for effective academic work. 
-In practice, only 3 community plugins are important!
+And as you can see below, the number of notes I create each month is actually quite stable. 
+
+{% include academic-obsidian/growth.html %}
 
 In this blog post, I'll overview my workflow. 
 This post is not an introduction to the basic note-taking features of Obsidian. 
 For that, there are many good resources, in particular the [Obsidian Help vault](https://help.obsidian.md/install), but there is no need to become an expert in Obsidian before starting. 
+Furthermore, my setup is technically quite minimal, and instead centred around structuring connections between notes for effective academic work. 
+In practice, only 3 community plugins are important!
 Finally, this setup is what works for me. You can use it as a starting point, or integrate some ideas into your own vault. 
 But play around, and see what sticks!
 
 <img src="/assets/img/obsidian-screenshot.png" alt="Obsidian screenshot" style="width:100%; height:auto;" />
 
 # The high-level overview
+
+{% include academic-obsidian/kg.html %}
+
 I prepared a [template on Github](https://github.com/HEmile/academic-obsidian) with everything below installed and configured, and with a few example notes (sneaking in some shameless self-promotion of my work ;)). 
 If you want to see some examples, download it, and open it as a folder in Obsidian. Then browse around a bit, both in the file browser and using backlinks. 
 
 The central idea behind my vault is to see it as a [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph) built out of notes. 
 Each note is a node in the graph with a particular type, and a few simple **typed links** between nodes semantically connect them. 
 Let's start with the main types, which I indicate using tags. 
-- `#source/paper` indicates notes about papers. Here, I will summarise and criticise the papers I'm reading _in my own words and understanding_. 
-- `#source/talk` is similar, but for talks I attended. 
-- `#topic` indicates the note is about a high-level topic. Papers and talks can be about that topic.
-- `#concept` are notes about particular concepts relevant in your field. I use them to define concepts and define their relationship to other concepts.
-- `#project` are notes about projects you are working on. I use them to keep track of the progress of my projects and ideas (these get the tag `#project/idea`).
+- <code class="kg-paper">#source/paper</code> indicates notes about <b class="kg-paper">papers</b>. Here, I will summarise and criticise the papers I'm reading _in my own words and understanding_. 
+- <code class="kg-paper">#source/talk</code> is similar, but for <b class="kg-paper">talks</b> I attended. 
+- <code class="kg-topic">#topic</code> indicates the note is about a high-level <b class="kg-topic">topic</b>. <b class="kg-paper">Papers</b> and <b class="kg-paper">talks</b> can be about that topic.
+- <code class="kg-concept">#concept</code> are notes about particular <b class="kg-concept">concepts</b> relevant in your field. I use them to define concepts and define their relationship to other concepts.
+- <code class="kg-project">#project</code> are notes about <b class="kg-project">projects</b> you are working on. I use them to keep track of the progress of my projects and ideas (these get the tag <code class="kg-project">#project/idea</code>).
 
 I will introduce other types of notes as we go along. 
 
@@ -64,7 +74,10 @@ Creating each type of note is easy: Use `cmd + R` to open the [template modal](h
 You might notice each note type has a colour associated with it. 
 I'll explain how this works in the Plugins section below. 
 
-## Paper notes (blue)
+<h2 class="kg-paper" id="paper-notes">Paper notes</h2>
+
+
+
 <img src="/assets/img/paper-example.png" alt="Paper note" style="width:90%; height:auto;" />
 
 Here is an example of a note about a paper of mine. 
@@ -75,24 +88,32 @@ They allow you to create multiple names for a note.
 That is specifically very useful because when you are writing a note and want to link to some concept, you can open brackets with `[[`, and aliases will come up as suggestions in case you use a different spelling, a related term, or a synonym. 
 Aliases also allow you to group together related concepts into a single note, such as when a paper introduces a new concept or method. 
 Finally, Obsidian can show unlinked mentions of aliases among the backlinks to improve the linking between notes. 
-- `hasTopic`: This is the first example of a **typed link** between notes, where the link type `hasTopic` provides additional semantic information about the link. It is the most important property for discoverability. I often have practically empty paper notes with just this field filled in so that it is indexed and easy to find and navigate to. Note that you can (and should) include multiple topics in this field! 
-- `author`: A typed link to author notes, indicating they authored the paper. Author notes are just notes with the tag `#author` and where they work. This may seem like hassle at first, but having author notes is surprisingly useful for networking! Whenever I am (re)meeting someone, I check which of their papers I read and what I liked about them. 
+
+{% include academic-obsidian/aliases.html %}
+
+- `hasTopic`: This is the first example of a **typed link** between notes, where the link type `hasTopic` provides additional semantic information about the link. It is the most important property for discoverability. I often have practically empty <b class="kg-paper">paper notes</b> with just this field filled in so that it is indexed and easy to find and navigate to. Note that you can (and should) include multiple topics in this field! 
+- `author`: A typed link to <b class="kg-person">author notes</b>, indicating they authored the paper. <b class="kg-person">Author notes</b> are just notes with the tag `#author` and where they work. This may seem like hassle at first, but having author notes is surprisingly useful for networking! Whenever I am (re)meeting someone, I check which of their papers I read and what I liked about them. 
 This can also inspire useful new ideas for collaborations. 
 I also use author notes to track where and when I met someone to reduce the amount of instances of "where did I know you from...". 
-- `project`: This is a typed link to project notes for which the paper is relevant. 
+- `project`: This is a typed link to <b class="kg-project">project notes</b> for which the paper is relevant. 
 - `publishedIn`: This is a typed link to a note for the journal or conference in which the paper was published. 
+
+{% include academic-obsidian/type-paper.html %}
 
 After that comes the main content of the note. In this example, I summarise the paper, linking to relevant concepts discussed in the meanwhile. I also often give my opinion of the paper for future reference. 
 
 This might sound like a lot of work to manage for each paper, but plugins like [Templater](https://github.com/SilentVoid13/Templater) and, in particular, [the citations plugin](https://github.com/hans/obsidian-citation-plugin) make this seamless. I will explain in the Plugins section below how I set those up. 
 
-## Topic notes (orange)
+<h2 class="kg-topic" id="topic-notes">Topic notes</h2>
+
 <img src="/assets/img/topic-example.png" alt="Topic note" style="width:89%; height:auto;" />
 
-Most of my topic notes are very simple, containing at best a few sentences to describe and define the topic, preventing confusion with other topics. If you are familiar with 
-hierarchical tags in Obsidian, a topic note is a note that sort of 'reperesents' a tag, except you can also add information about the topic.
+Most of my <b class="kg-topic">topic notes</b> are very simple, containing at best a few sentences to describe and define the topic, preventing confusion with other topics. If you are familiar with 
+hierarchical tags in Obsidian, a <b class="kg-topic">topic note</b> is a note that sort of 'reperesents' a tag, except you can also add information about the topic.
 
-The most important typed link for topic notes is `subset`, which creates a [hierarchy](https://en.wikipedia.org/wiki/Taxonomy) of topics (precisely, a [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)). Topic notes that are not subsets of other topic notes are the roots of the taxonomy and appear at the top level of the navigator.
+The most important typed link for <b class="kg-topic">topic notes</b> is `subset`, which creates a [hierarchy](https://en.wikipedia.org/wiki/Taxonomy) of topics (precisely, a [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)). <b class="kg-topic">Topic notes</b> that are not subsets of other <b class="kg-topic">topic notes</b> are the roots of the taxonomy and appear at the top level of the navigator.
+
+{% include academic-obsidian/type-topic.html %}
 
 For example, the topic of "reasoning shortcuts" studies a specific problem within neurosymbolic learning. And this problem relates to identifiability. And the topic of "artificial intelligence" is a root topic that contains many subtopics like "machine learning", "planning", "symbolic AI", etc. 
 Note that such hierarchies are not possible with folders or hierarchical tags, as shown below. You can only put notes in a single folder. And hierarchical tags are only trees, meaning you cannot create topics like "neurosymbolic AI" as a subtopic of both "symbolic AI" and "machine learning":
@@ -101,13 +122,15 @@ Note that such hierarchies are not possible with folders or hierarchical tags, a
 <img src="/assets/img/typed_links.png" alt="Typed links" style="width:100%; height:auto;" />
 
 
-When you use `hasTopic` from papers and talks to link to topic notes, they automatically appear in the backlinks of the topic notes, and in the navigator on the left! Read below for other tips on how to use the notebook navigator to find notes related to a particular topic.
+When you use `hasTopic` from <b class="kg-paper">papers</b> and <b class="kg-paper">talks</b> to link to <b class="kg-topic">topic notes</b>, they automatically appear in the backlinks of the <b class="kg-topic">topic notes</b>, and in the navigator on the left! Read below for other tips on how to use the notebook navigator to find notes related to a particular topic.
 
-## Concept notes (green)
+<h2 class="kg-concept" id="concept-notes">Concept notes</h2>
+
+
 <img src="/assets/img/concept-example.png" alt="Concept note" style="width:70%; height:auto;" />
 
 
-Concept notes describe and define concepts. 
+<b class="kg-concept">Concept notes</b> describe and define concepts. 
 A typical workflow is when I read a paper that discusses a new concept, I create a new note for that concept so I can refer to it in other notes. 
 This also allows me to make connections between papers that discuss some concept from different perspectives. 
 
@@ -116,16 +139,21 @@ I mainly use two types of typed links: `hasTopic` indicates the field of study t
 Both `hasTopic` and `isA` will allow the note to appear in the navigator under the relevant topics. 
 
 
+{% include academic-obsidian/type-concept.html %}
 
-## Project notes (red)
+<h2 class="kg-project" id="project-notes">Project notes</h2>
+
+
 <img src="/assets/img/project-example.png" alt="Project note" style="width:70%; height:auto;" />
 
-Project notes will discuss the progress of an ongoing project, or describe an idea for a new project (in which case they get the tag `#project/idea`). 
-I use the `with` typed link to refer to author notes of people involved in the project. 
+<b class="kg-project">Project notes</b> will discuss the progress of an ongoing project, or describe an idea for a new project (in which case they get the tag <code class="kg-project">#project/idea</code>). 
+I use the `with` typed link to refer to <b class="kg-person">author notes</b> of people involved in the project. 
 I also use this to indicate who I had some idea with. This saves me from going behind someone's back on their own idea because I forgot where I got it from. Now I can ask for a collaboration, help or feedback! (This might sound like a niche thing, but as you progress your career, you will thank me for this tip.)
-Project notes also have the `hasTopic` typed link as usual, and I use a lot of `aliases` for rediscoverability of ideas. 
+<b class="kg-project">Project notes</b> also have the `hasTopic` typed link as usual, and I use a lot of `aliases` for rediscoverability of ideas. 
 
-For ideas, I also have a `score` property to rank them in 1-5 (I rerank them every year or so when I have to decide on master thesis topics). And another for the `size` of the idea. 
+For <b class="kg-project">ideas</b>, I also have a `score` property to rank them in 1-5 (I rerank them every year or so when I have to decide on master thesis topics). And another for the `size` of the idea. 
+
+{% include academic-obsidian/type-project.html %}
 
 # Technicalities and tips
 The rest of the post is going to be some random collection of plugins, hotkeys, tips, further minor explanations and answers to questions. 
@@ -148,20 +176,22 @@ It comes preinstalled in the [template](https://github.com/HEmile/academic-obsid
 This fork instantiates the hierarchy of topics, and recursively adds notes with that topic (or that use `isA`) to the navigator. 
 You can navigate it just like with tags, giving an immediate overview of the structure of your vault and the connections between your notes. 
 When is this useful? 
-Well, let's say you want to find all papers about the topic `Artificial Intelligence`. 
-Without the navigator, you could navigate to the topic note `Artificial Intelligence`, and find its backlinks. 
-But then you would be missing papers that link to the subtopic `Neurosymbolic Artificial Intelligence` but not to `Artificial Intelligence`. 
-In the notebook navigator, you can hierarchically navigate through your vault, and find the papers about `Neurosymbolic Artificial Intelligence` together with other `Artificial Intelligence` papers within a single list!
+Well, let's say you want to find all <b class="kg-paper">papers</b> about the topic <code class="kg-topic">Artificial Intelligence</code>. 
+Without the navigator, you could navigate to the <b class="kg-topic">topic note</b> <code class="kg-topic">Artificial Intelligence</code>, and find its backlinks. 
+But then you would be missing <b class="kg-paper">papers</b> that link to the subtopic <code class="kg-topic">Neurosymbolic Artificial Intelligence</code> but not to <code class="kg-topic">Artificial Intelligence</code>. 
+In the notebook navigator, you can hierarchically navigate through your vault, and find the <b class="kg-paper">papers</b> about <code class="kg-topic">Neurosymbolic Artificial Intelligence</code> together with other <code class="kg-topic">Artificial Intelligence</code> <b class="kg-paper">papers</b> within a single list!
+
+{% include video.liquid path="assets/video/notebook-navigator.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true loop=true muted=true cache_bust=true %}
 
 
 ### [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links)
 This is my favourite plugin - but I also contributed heavily to it, so I might be a bit biased. 
 You might have noticed from my examples that links have different colours depending on the type of note they are (practically: what tags they have). 
 This is because of this plugin! 
-It's honestly a huge life-saver: When I scroll through a search, or look at a note, I can immediately see if it is a paper, a concept, a project, etc. 
+It's honestly a huge life-saver: When I scroll through a search, or look at a note, I can immediately see if it is a <b class="kg-paper">paper</b>, a <b class="kg-concept">concept</b>, a <b class="kg-project">project</b>, etc. 
 So when I search for something specific, I can open the quick switcher and visually filter by one of the colours without having to type an explicit filter. 
 
-In addition, I programmed a few extras for my vault, such as paper links that indicate the year of publication and the venue they were published in, and ideas notes showing their score. 
+In addition, I programmed a few extras for my vault, such as <b class="kg-paper">paper links</b> that indicate the year of publication and the venue they were published in, and <b class="kg-project">idea notes</b> showing their score. 
 Setting this up is not hard, but requires a bit of tweaking with CSS. 
 I would suggest to start with the [template](https://github.com/HEmile/academic-obsidian) and work from there. 
 
@@ -169,7 +199,7 @@ I would suggest to start with the [template](https://github.com/HEmile/academic-
 The citations plugins are known for their integration with Zotero or bibtex files. 
 That is what I also used... But honestly, it was too slow. Waiting for Zotero to import a file took too long, and so did syncing that with Obsidian. 
 
-Instead, I use a custom-built version of this plugin available [here](https://github.com/HEmile/academic-obsidian/tree/main/.obsidian/plugins/obsidian-citation-plugin), which is preinstalled in the [template](https://github.com/HEmile/academic-obsidian). This adds a new command and hotkey to **directly create a paper note from a bibtex entry on your clipboard**. 
+Instead, I use a custom-built version of this plugin available [here](https://github.com/HEmile/academic-obsidian/tree/main/.obsidian/plugins/obsidian-citation-plugin), which is preinstalled in the [template](https://github.com/HEmile/academic-obsidian). This adds a new command and hotkey to **directly create a <b class="kg-paper">paper note</b> from a bibtex entry on your clipboard**. 
 Then, I just find a bibtex entry online, copy it, hit the hotkey, and voila! 
 This automatically adds the year, authors and citekey:
 
@@ -201,7 +231,7 @@ Some important hotkeys that come pre-installed with the [template](https://githu
 - `cmd + control + O`: Open omnisearch
 - `cmd + Enter`: Open link under cursor in new tab (seriously great together with VIM)
 - `cmd + P`: Open command palette
-- `control + option + shift + I`: Create paper note from clipboard containing bibtex
+- `control + option + shift + I`: Create <b class="kg-paper">paper note</b> from clipboard containing bibtex
 - `cmd + R`: Insert template
 - `control + O`: Navigate backward
 - `control + I`: Navigate forward
@@ -217,10 +247,10 @@ Some other types of notes I use that are mostly quite similar to the four ones d
 Maybe for your workflow, these could inspire which ones to add. 
 In general, I would suggest a note type (ie, tags) to be for categories (e.g. a human, a paper, a talk, a concept, a tool), but not about something specific like a field of study (about biology, about mathematics, about life, etc). 
 If you're a botanist, a `#plant` tag is probably a good idea. 
-- `#source/dataset`: Notes about datasets and benchmarks. 
-- `#method`: Within AI, we often compare specific methods at their performance. Many papers introduce a method. I find it is unnecessary to have separate notes for the paper and the method it introduces. So this is a type I actually rarely use, and only for very established methods. Instead, I usually add the method name as an alias. 
-- `#method/tool` and `#method/library`: Notes about tools and libraries that can be used in academic research.
-- `#concept/problem`: Notes about open problems that are studied in the field.
+- <code class="kg-paper">#source/dataset</code>: Notes about <b class="kg-paper">datasets and benchmarks</b>. 
+- <code class="kg-concept">#method</code>: Within AI, we often compare specific methods at their performance. Many papers introduce a method. I find it is unnecessary to have separate notes for the paper and the method it introduces. So this is a type I actually rarely use, and only for very established methods. Instead, I usually add the method name as an alias. 
+- <code class="kg-concept">#method/tool</code> and <code class="kg-concept">#method/library</code>: Notes about <b class="kg-concept">tools and libraries</b> that can be used in academic research.
+- <code class="kg-concept">#concept/problem</code>: Notes about <b class="kg-concept">open problems</b> that are studied in the field.
 - `#venue/conference`: Notes about conferences and journals (`#venue/journal`).
 - `#institution`: Notes about institutions like universities or companies.
 
@@ -245,7 +275,7 @@ If anything, I sometimes put some action items in my project notes, depending to
 - **NEW 9-10-26: Not even in 2026? Agents are super smart now!** Err, yes. I now sometimes use Claude Cowork as an agent over my notes. It can only see a safe, restricted subset of my vault. It's great as a semantic search and summariser. And I sometimes let it write draft or summaries of long, content-focussed chats. But the main point above, that you should absolutely write your own notes, is still central. 
 - **What is your folder structure?** I only use tags to indicate note types. I barely use any folder, and all notes are in the top-level directory. Folders are strictly hierarchical, and create walls between ideas. Furthermore, it is not worth the effort when you are already using links to structure your vault. 
 - **Do you have index notes / maps of content?** Nope, not worth the maintenance time imo. Going through backlinks and simple search is sufficient for retrieval. 
-- **Should I create a separate note for concept or topic X? Or put it as part of note Y?** 
+- **Should I create a separate note for <span class="kg-concept">concept</span> or <span class="kg-topic">topic</span> X? Or put it as part of note Y?** 
 I don't have any real guidelines here; it's gut instinct and iteration. 
 If I think a note gets too bloated, I sometimes split it up. But I also don't want all kinds of mini notes about the most niche concepts. 
 Most importantly, **don't overthink this**: 

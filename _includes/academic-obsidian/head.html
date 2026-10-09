@@ -1,0 +1,180 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>/* Figures and colour coding for the academic-obsidian blog post. Colours follow
+the Supercharged Links snippet of the vault. Figures sit on white cards in both
+themes; the colour-coded text adapts. */
+:root { --kg-paper: #32b2d7; --kg-topic: #ff6600; --kg-concept: #5cb527; --kg-project: #e00000; }
+.kg-paper { color: var(--kg-paper) !important; }
+.kg-topic { color: var(--kg-topic) !important; }
+.kg-concept { color: var(--kg-concept) !important; }
+.kg-project { color: var(--kg-project) !important; }
+b.kg-paper, b.kg-topic, b.kg-concept, b.kg-project, b.kg-person { font-weight: 700; }
+h2.kg-paper, h2.kg-topic, h2.kg-concept, h2.kg-project { font-weight: 700; }
+.aob-fig { margin: 1.6rem auto; background: #fff; color: #1a1a2e; border: 1px solid #e6e9ed; border-radius: 12px; padding: 18px 20px 12px;
+font-family: 'Montserrat', sans-serif; position: relative; }
+.aob-fig figcaption { font-family: inherit; font-size: 0.8rem; color: #6b7480; text-align: center; margin-top: 10px; line-height: 1.45; }
+.aob-fig figcaption a { color: inherit; text-decoration: underline; }
+.aob-fig figcaption code { font-size: 0.95em; background: #f3f5f7; color: #1a1a2e; padding: 1px 4px; border-radius: 4px; }
+html[data-theme="dark"] .aob-fig { border-color: transparent; }
+.aob-svg, .aob-fig .vg-svg { width: 100%; height: auto; display: block; overflow: visible; font-family: 'Montserrat', sans-serif; }
+.aob-type { max-width: 440px; }
+.aob-kg { max-width: 860px; }
+.aob-growth { max-width: 820px; }
+.aob-aliases { max-width: 640px; padding: 22px 22px 14px; background: #f6f7f9; }
+/* svg text of the vault-graph charts */
+.aob-fig .vg-tick { font-size: 15px; fill: #8a94a0; font-weight: 500; }
+.aob-fig .vg-axis-title { font-size: 17px; fill: #55606e; font-weight: 600; }
+.aob-fig .vg-value, .aob-fig .vg-annot { font-size: 18px; fill: #1a1a2e; font-weight: 700; }
+.aob-fig .vg-node, .aob-banner .vg-node { font-size: 18px; fill: #1a1a2e; font-weight: 500; font-family: 'Montserrat', sans-serif; }
+/* hover card */
+.aob-tip { position: fixed; z-index: 1000; pointer-events: none; opacity: 0; transition: opacity 0.12s; background: #fff; color: #1a1a2e;
+border-radius: 8px; padding: 6px 10px; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.18); font: 500 13px/1.4 'Montserrat', sans-serif; }
+/* banner: a 1440-wide design scaled to the column */
+.aob-banner { position: relative; width: 100%; aspect-ratio: 1440 / 520; overflow: hidden; margin: 0.5rem 0 1.8rem;
+background: #fff; border-radius: 14px; border: 1px solid #e6e9ed; }
+html[data-theme="dark"] .aob-banner { border-color: transparent; }
+.aob-canvas { position: absolute; left: 0; top: 0; transform-origin: 0 0; font-family: 'Montserrat', sans-serif; color: #1a1a2e; }
+.aob-b-left { position: absolute; left: 70px; top: 0; bottom: 0; width: 600px; display: flex; flex-direction: column; justify-content: center; }
+.aob-b-kicker { font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: #717984; font-weight: 600; }
+.aob-b-title { margin-top: 12px; font-size: 72px; font-weight: 900; line-height: 1.04; letter-spacing: -0.01em; color: #1a1a2e; }
+.aob-obs { color: #8064A2; }
+.aob-b-divider { width: 248px; height: 7px; margin-top: 26px; border-radius: 2px; background: linear-gradient(90deg, #F79646, #9BBB59, #4BACC6); }
+.aob-b-sub { margin-top: 22px; font-size: 21px; line-height: 1.4; font-weight: 600; color: #1a1a2e; }
+.aob-win { position: absolute; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e6e9ed;
+box-shadow: 0 18px 50px rgba(26, 26, 46, 0.14), 0 2px 8px rgba(26, 26, 46, 0.06); }
+.aob-bar { height: 34px; display: flex; align-items: center; gap: 7px; padding: 0 14px; background: #f6f7f9; border-bottom: 1px solid #e6e9ed; }
+.aob-bar i { width: 11px; height: 11px; border-radius: 50%; background: #d6dae0; display: block; }
+.aob-bar span { margin-left: 10px; font-size: 13px; font-weight: 700; color: #55606e; }
+.aob-body { position: absolute; top: 34px; left: 0; right: 0; bottom: 0; overflow: hidden; }
+.aob-b-browser { left: 690px; right: 34px; top: 30px; height: 330px; }
+.aob-b-scale { position: absolute; left: 16px; top: 14px; width: 1000px; height: 440px; transform: scale(0.68); transform-origin: 0 0; }
+.aob-b-dag { left: 630px; width: 450px; top: 250px; height: 250px; z-index: 3; }
+.aob-b-dag .aob-body { padding: 8px 14px 6px; }
+.aob-b-dag svg { width: 100%; height: 100%; overflow: visible; font-family: 'Montserrat', sans-serif; }
+/* the topic explorer (vault-graph), in px of the 1440×820 slide space */
+.aob-x { position: absolute; inset: 0; }
+.aob-x .vg-explorer { position: absolute; inset: 0; display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; }
+.aob-x .vg-tree { overflow: hidden; }
+.aob-x .vg-row { display: grid; grid-template-columns: 22px 1fr 90px 64px; align-items: center; gap: 10px; font-size: 16.7px; height: 27px;
+padding-right: 12px; border-radius: 8px; color: #1a1a2e; font-weight: 500; }
+.aob-x .vg-row.on { font-weight: 700; }
+.aob-x .vg-row.cur { background: #ffe9d9; }
+.aob-x .vg-caret { color: #9aa3ad; font-size: 13.5px; text-align: center; }
+.aob-x .vg-row-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.aob-x .vg-row-bar { height: 6px; background: #f0f2f5; border-radius: 3px; overflow: hidden; }
+.aob-x .vg-row-bar span { display: block; height: 100%; background: #ff6600; border-radius: 3px; }
+.aob-x .vg-row-n { text-align: right; color: #55606e; font-variant-numeric: tabular-nums; font-size: 15.1px; }
+.aob-x .vg-multi { font-size: 11.3px; font-weight: 700; color: #d45500; border: 1.5px solid #ff6600; border-radius: 10px; padding: 1px 7px; margin-left: 10px; vertical-align: 2px; }
+.aob-x .vg-row-more { font-size: 13.5px; color: #8a94a0; height: 22px; line-height: 22px; }
+.aob-x .vg-notes { border-left: 1px solid #edf0f3; padding-left: 30px; overflow: hidden; }
+.aob-x .vg-notes-head { font-size: 21.6px; color: #1a1a2e; margin-bottom: 14px; }
+.aob-x .vg-notes-head span { display: block; font-size: 14.6px; color: #8a94a0; font-weight: 500; margin-top: 4px; }
+.aob-x .vg-note { font-size: 15.1px; height: 30px; line-height: 30px; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; }
+.aob-x .vg-note.sub { color: #8a94a0; }
+.aob-x .vg-dot { display: inline-block; width: 10px; height: 10px; border-radius: 5px; margin-right: 12px; vertical-align: 1px; }
+/* quick switcher with aliases */
+.aob-switcher { background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(26, 26, 46, 0.12), 0 0 0 1px rgba(26, 26, 46, 0.06); overflow: hidden; text-align: left; }
+.aob-sw-input { box-sizing: border-box; font-size: 18px; font-weight: 600; line-height: 1.5; padding: 14px 18px; border-bottom: 1px solid #eceef1; height: 56px; overflow: hidden; color: #1a1a2e; white-space: nowrap; }
+.aob-caret { display: inline-block; width: 2px; height: 1.1em; background: #8064A2; vertical-align: -3px; margin-left: 2px; animation: aob-blink 1s steps(1) infinite; }
+@keyframes aob-blink { 50% { opacity: 0; } }
+/* fixed height: room for 5 results (render() shows at most 5), so the page below never moves */
+.aob-sw-rows { height: 212px; padding: 6px 0; box-sizing: border-box; overflow: hidden; }
+.aob-sw-row { display: flex; align-items: center; gap: 12px; height: 40px; box-sizing: border-box; padding: 0 18px; font-size: 15px; font-weight: 600; white-space: nowrap; }
+.aob-sw-row.on { background: #f1eef6; }
+.aob-sw-row.dim .n { opacity: 0.75; }
+.aob-sw-row .n { overflow: hidden; text-overflow: ellipsis; }
+.aob-sw-row small { margin-left: auto; padding-left: 16px; font-size: 13px; font-weight: 500; color: #8a94a0; flex-shrink: 0; }
+.aob-sw-row mark { background: #fff1b8; color: inherit; padding: 0 1px; border-radius: 2px; }
+.aob-sw-empty { padding: 8px 18px; font-size: 15px; color: #a0a8b2; }
+@media (max-width: 576px) { .aob-sw-row small { display: none; } .aob-fig { padding: 12px 10px 8px; } }
+</style>
+<script>// The quick-switcher alias demo, shared by the slides (imported) and the blog
+// (inlined into the post by build-blog-figures.mjs, without the `export`s).
+// notes: [{ n: name, a: [aliases], c: colour, t: type }]
+function swEsc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+// Fuzzy match as in Obsidian: the query's characters in order, close together;
+// contiguous matches rank first, prefixes before infixes.
+function swMatchOne(s, q) {
+const sl = s.toLowerCase(), i = sl.indexOf(q);
+if (i >= 0) return { score: i === 0 ? 0 : 1, at: [...Array(q.length).keys()].map(k => i + k) };
+const at = [];
+for (let j = 0, k = 0; j < sl.length && k < q.length; j++) if (sl[j] === q[k]) { at.push(j); k++; }
+return at.length === q.length && at[at.length - 1] - at[0] < 2 * q.length ? { score: 2 + (at[at.length - 1] - at[0]) / 100, at } : null;
+}
+/** Up to `max` notes matching q by name or alias: [{ note, alias|null, at }]. */
+function swMatch(notes, q, max = 5) {
+const ql = q.toLowerCase(), hits = [];
+if (!ql) return hits;
+for (const n of notes) {
+let best = null;
+const m = swMatchOne(n.n, ql);
+if (m) best = { ...m, alias: null };
+for (const a of n.a) { const ma = swMatchOne(a, ql); if (ma && (!best || ma.score < best.score)) best = { ...ma, alias: a }; }
+if (best) hits.push({ note: n, ...best });
+}
+hits.sort((x, y) => x.score - y.score || x.note.n.length - y.note.n.length);
+return hits.slice(0, max);
+}
+/** HTML of s with the characters at positions `at` in <mark>. */
+function swHighlight(s, at) {
+return [...s].map((c, i) => (at.includes(i) ? (at.includes(i - 1) ? '' : '<mark>') + swEsc(c) + (at.includes(i + 1) ? '' : '</mark>') : swEsc(c))).join('');
+}
+/** Type the queries one by one, forever; show(q) is called after every keystroke. */
+async function swRun(queries, { show, active = () => true, typeMs = 110, holdMs = 2200, deleteMs = 35, gapMs = 350 }) {
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+for (let k = 0; ; k = (k + 1) % queries.length) {
+const q = queries[k];
+while (!active()) await sleep(250);
+for (let i = 1; i <= q.length; i++) { show(q.slice(0, i)); await sleep(typeMs); }
+await sleep(holdMs);
+for (let i = q.length - 1; i >= 0; i--) { show(q.slice(0, i)); await sleep(deleteMs); }
+await sleep(gapMs);
+}
+}
+// Behaviour for the academic-obsidian blog figures: scale the banner to the
+// column, hover cards for [data-tip], and the alias demo in the quick switcher.
+(() => {
+const ready = f => (document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', f) : f());
+ready(() => {
+// banner
+document.querySelectorAll('[data-aob-scale]').forEach(box => {
+const canvas = box.firstElementChild, W = Number(box.dataset.aobScale);
+const fit = () => { canvas.style.transform = `scale(${box.clientWidth / W})`; };
+fit();
+if (window.ResizeObserver) new ResizeObserver(fit).observe(box); else window.addEventListener('resize', fit);
+});
+// hover cards
+const tip = document.createElement('div');
+tip.className = 'aob-tip';
+document.body.appendChild(tip);
+document.querySelectorAll('.aob-fig').forEach(f => {
+f.addEventListener('mousemove', e => {
+const t = e.target.closest('[data-tip]');
+if (!t) { tip.style.opacity = 0; return; }
+tip.innerHTML = t.getAttribute('data-tip');
+tip.style.left = e.clientX + 14 + 'px';
+tip.style.top = e.clientY + 14 + 'px';
+tip.style.opacity = 1;
+});
+f.addEventListener('mouseleave', () => { tip.style.opacity = 0; });
+});
+// quick switcher: type an alias, see which note it finds (swMatch etc.: switcher.js)
+document.querySelectorAll('[data-aob-switcher]').forEach(sw => {
+const { notes, queries } = JSON.parse(sw.querySelector('.aob-sw-data').textContent);
+const qEl = sw.querySelector('.aob-sw-q'), rows = sw.querySelector('.aob-sw-rows');
+const show = q => {
+qEl.textContent = q;
+const hits = swMatch(notes, q);
+rows.innerHTML = !q ? '' : hits.length
+? hits.map((h, i) => `<div class="aob-sw-row ${i ? 'dim' : 'on'}"><span class="n" style="color:${h.note.c}">${h.alias ? swEsc(h.note.n) : swHighlight(h.note.n, h.at)}</span>${h.alias ? `<small>${swHighlight(h.alias, h.at)}</small>` : ''}</div>`).join('')
+: '<div class="aob-sw-empty">No notes found.</div>';
+};
+show(queries[0]);
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+let visible = false;
+new IntersectionObserver(es => { visible = es.some(e => e.isIntersecting); }).observe(sw);
+swRun(queries, { show, active: () => visible });
+});
+});
+})();
+</script>
