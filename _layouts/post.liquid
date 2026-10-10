@@ -73,6 +73,10 @@ layout: default
     </div>
   </article>
 
+  {% unless page.outline == false %}
+    {% include post_outline.liquid %}
+  {% endunless %}
+
   {% if page.citation %}
     {% include citation.liquid %}
   {% endif %}
